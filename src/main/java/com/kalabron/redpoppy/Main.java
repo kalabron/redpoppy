@@ -85,6 +85,13 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(blackBloodKeyItem,  0, blackBloodKeyModel);
 		
+		Item bloodyScrapItem = GameRegistry.findItem("redpoppy",  "bloodyScrap");
+		ModelResourceLocation bloodyScrapModel = 
+				new ModelResourceLocation("redpoppy:bloodyScrap", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodyScrapItem,  0, bloodyScrapModel);
+		
+		
 		Item bloodBerryItem = GameRegistry.findItem("redPoppy",  "bloodBerry");
 		ModelResourceLocation bloodBerryModel = 
 				new ModelResourceLocation("redpoppy:bloodBerry", "inventory");
@@ -113,6 +120,15 @@ public class Main
 		
 		GameRegistry.addShapelessRecipe(knockbackItemStack,
 				Items.gunpowder, Items.stone_sword);
+		
+		ItemStack unbreakingItemStack = new ItemStack(Items.stone_sword);
+		unbreakingItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingItemStack,
+				Items.coal, Items.stone_sword);
+		
+		
+		
 		
 		GameRegistry.addRecipe(
 				new ItemStack(redPoppyBookItem),

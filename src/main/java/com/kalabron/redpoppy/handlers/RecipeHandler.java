@@ -1,12 +1,7 @@
 package com.kalabron.redpoppy.handlers;
 
 
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.common.MinecraftForge;
 
 
 
@@ -19,7 +14,9 @@ public class RecipeHandler
 	
 	public static void registerRecipes()
 	{
-		 //ItemStack knockbackItemStack = new ItemStack(Items.stone_sword);
+		MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
+		
+		//ItemStack knockbackItemStack = new ItemStack(Items.stone_sword);
 		 //knockbackItemStack.addEnchantment(Enchantment.knockback, 1);
 		
 		 //GameRegistry.addShapelessRecipe(knockbackItemStack,
