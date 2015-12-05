@@ -1,0 +1,24 @@
+0.0.1.0
+	• Blocks
+		? Added Blood Stone Block
+	• Items:
+		? Added Blood Stone Block
+		? Added Blood Stone Ore
+		? Added Blood Stone Ingot
+		? Added Blood Pickaxe
+		? Added Blood Berry
+		? Added Blood Scrap
+		? Added Red Poppy Book
+		? Added Black Blood Key
+	• Recipes
+		? Added Smelting Recipe for Blood Stone Ore
+		? Added Crafting Recipe for Red Poppy Book
+		? Added Crafting Recipe for Blood Stone Block
+		? Added Recipe for Enchanted Stone Sword (Unbreaking)
+		? Added Recipe for Enchanted Stone Sword (Knockback)
+	• Drops
+		? Added Blood Scrap as drop for Cow
+		? Added Blood Scrap as drop for Chicken
+		? Added Blood Scrap as drop for Pig
+	• Dungeon Changes
+		? Added Blood Stone Ingot as a random chance for Dungeon Chests loot
