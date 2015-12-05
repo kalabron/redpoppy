@@ -1,6 +1,7 @@
 0.0.1.0
 	• Blocks
 		• Added Blood Stone Block
+		• Added Blood Berry Bush
 	• Items:
 		• Added Blood Stone Block
 		• Added Blood Stone Ore
