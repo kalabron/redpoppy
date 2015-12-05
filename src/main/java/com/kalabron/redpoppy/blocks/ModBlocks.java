@@ -15,7 +15,7 @@ public class ModBlocks
 			GameRegistry.registerBlock(bloodStoneBlock, "bloodStoneBlock");
 			
 			bloodBerryBush = new BloodBerryBush();
-			GameRegistry.registerBlock(bloodBerryBush, "bloodBerry");
+			GameRegistry.registerBlock(bloodBerryBush, "bloodBerryBush");
 		}
 
 }
