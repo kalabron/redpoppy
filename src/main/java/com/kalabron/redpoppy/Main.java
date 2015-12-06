@@ -138,6 +138,16 @@ public class Main
 				'd', Items.book,
 				'e', Blocks.red_flower);
 		
+		
+		GameRegistry.addRecipe(
+				new ItemStack(bloodPickAxeItem),
+				"eee",
+				" d ",
+				" d ",
+				'd', Items.stick,
+				'e', bloodStoneIngotItem);
+		
+		
 		GameRegistry.addRecipe(
 				new ItemStack(bloodStoneOreItem),
 				"ddd",

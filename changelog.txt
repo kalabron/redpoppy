@@ -1,25 +1,32 @@
-0.0.1.0
+0.0.1.0  (Alpha)
 	• Blocks
-		• Added Blood Stone Block
-		• Added Blood Berry Bush
+		• Added Bloodstone Ore
+		• Added Bloodberry Bush
 	• Items:
-		• Added Blood Stone Block
-		• Added Blood Stone Ore
-		• Added Blood Stone Ingot
-		• Added Blood Pickaxe
-		• Added Blood Berry
-		• Added Blood Scrap
-		• Added Red Poppy Book
-		• Added Black Blood Key
+		• Added Bloodstone Dust
+		• Added Bloodstone Ingot
+		• Added Bloodstone Pickaxe
+		• Added Bloodberry
+		• Added Bloody Scrap
+		• Added Order of the Red Poppy Book
+		• Added Black Bloodkey
+	• Textures:
+		• Added custom texture for Bloodstone Ore
+		• Added custom texture for Bloodstone Dust
+		• Added custom texture for Bloodstone Ingot
+		• Added custom texture for Order of the Red Poppy Book
+		• Added custom texture for Black Bloodkey
+		• Added custom texture for Bloody Scrap
+		• Added custom texture for Bloodstone Pickaxe
 	• Recipes
-		• Added Smelting Recipe for Blood Stone Ore
-		• Added Crafting Recipe for Red Poppy Book
-		• Added Crafting Recipe for Blood Stone Block
-		• Added Recipe for Enchanted Stone Sword (Unbreaking)
-		• Added Recipe for Enchanted Stone Sword (Knockback)
+		• Added Smelting Recipe for Bloodstone Dust --> Bloodstone Ingot
+		• Added Crafting Recipe for Order of the Red Poppy Book (Poppy + Book)
+		• Added Crafting Recipe for Bloodstone Block (Bloodstone Dust in all 9 slots)
+		• Added Crafting Recipe for Bloodstone Pickaxe (3 Bloodstone Ingots + 2 sticks)
+		• Added Recipe for Enchanted Stone Sword [Unbreaking] -- (Stone Sword + xx)
+		• Added Recipe for Enchanted Stone Sword [Knockback]  -- (Stone Sword + xx]
 	• Drops
-		• Added Blood Scrap as drop for Cow
-		• Added Blood Scrap as drop for Chicken
-		• Added Blood Scrap as drop for Pig
+		• Added Bloody Scrap as random drop for Pig
+		• Added Bloodstone Dust as mining drop for Bloodstone Ore	
 	• Dungeon Changes
-		• Added Blood Stone Ingot as a random chance for Dungeon Chests loot
+		• Added Bloodstone Ingot as a random chance for Dungeon Chests loot
