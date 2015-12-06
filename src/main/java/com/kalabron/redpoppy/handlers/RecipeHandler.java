@@ -4,17 +4,14 @@ package com.kalabron.redpoppy.handlers;
 import net.minecraftforge.common.MinecraftForge;
 
 
-
-
-
-
 public class RecipeHandler 
 {
 	 //public static Item redPoppyBook;
 	
 	public static void registerRecipes()
 	{
-		MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
+		//MinecraftForge.EVENT_BUS.register(new MobDropsHandler());
+		MinecraftForge.EVENT_BUS.register(new PigDropsBloodyScraps());
 		
 		//ItemStack knockbackItemStack = new ItemStack(Items.stone_sword);
 		 //knockbackItemStack.addEnchantment(Enchantment.knockback, 1);
