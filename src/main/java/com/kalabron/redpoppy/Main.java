@@ -55,11 +55,11 @@ public class Main
 		proxy.init(event);
 				
 		//Custom Textures
-		Item bloodStoneBlockItem = GameRegistry.findItem("redpoppy",  "bloodStoneBlock");
-		ModelResourceLocation bloodStoneBlockModel = 
-				new ModelResourceLocation("redpoppy:bloodStoneBlock", "inventory");
+		Item bloodStoneOreItem = GameRegistry.findItem("redpoppy",  "bloodStoneOre");
+		ModelResourceLocation bloodStoneOreModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneOre", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodStoneBlockItem,  0, bloodStoneBlockModel);
+			.register(bloodStoneOreItem,  0, bloodStoneOreModel);
 		
 		Item bloodStoneIngotItem = GameRegistry.findItem("redpoppy",  "bloodStoneIngot");
 		ModelResourceLocation bloodStoneIngotModel = 
@@ -67,11 +67,11 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodStoneIngotItem,  0, bloodStoneIngotModel);
 		
-		Item bloodStoneOreItem = GameRegistry.findItem("redpoppy",  "bloodStoneOre");
-		ModelResourceLocation bloodStoneOreModel = 
-				new ModelResourceLocation("redpoppy:bloodStoneOre", "inventory");
+		Item bloodStoneDustItem = GameRegistry.findItem("redpoppy",  "bloodStoneDust");
+		ModelResourceLocation bloodStoneDustModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneDust", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodStoneOreItem,  0, bloodStoneOreModel);
+			.register(bloodStoneDustItem,  0, bloodStoneDustModel);
 		
 		Item redPoppyBookItem = GameRegistry.findItem("redpoppy",  "redPoppyBook");
 		ModelResourceLocation redPoppyBookModel = 
@@ -139,15 +139,15 @@ public class Main
 				'e', Blocks.red_flower);
 		
 		GameRegistry.addRecipe(
-				new ItemStack(bloodStoneBlockItem),
+				new ItemStack(bloodStoneOreItem),
 				"ddd",
 				"ddd",
 				"ddd",
-				'd', bloodStoneOreItem);
+				'd', bloodStoneDustItem);
 ;
 		
 		GameRegistry.addSmelting(
-				bloodStoneOreItem,
+				bloodStoneDustItem,
 				new ItemStack(bloodStoneIngotItem, 1),
 				1.0F);
 	}

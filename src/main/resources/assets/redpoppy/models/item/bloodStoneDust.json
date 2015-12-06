@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "redpoppy:items/bloodStoneBlock"
+        "layer0": "redpoppy:items/bloodStoneDust"
     },
     "display":  {
         "thirdperson":  {

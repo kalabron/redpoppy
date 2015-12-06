@@ -12,7 +12,7 @@ public class ModItems
 	static ToolMaterial poppium = EnumHelper.addToolMaterial("poppium", 3, 2000, 9.5F, 3.5F, 10);
 	
 	public static Item bloodPickAxe;
-	public static Item bloodStoneOre;
+	public static Item bloodStoneDust;
 	public static Item bloodStoneIngot;
 	public static Item redPoppyBook;
 	public static Item blackBloodKey;
@@ -22,8 +22,8 @@ public class ModItems
 	
 	public static void loadItems()
 	{
-		bloodStoneOre = new BloodStoneOre();
-		GameRegistry.registerItem(bloodStoneOre, "bloodStoneOre");
+		bloodStoneDust = new BloodStoneDust();
+		GameRegistry.registerItem(bloodStoneDust, "bloodStoneDust");
 		
 		bloodStoneIngot = new BloodStoneIngot();
 		GameRegistry.registerItem(bloodStoneIngot, "bloodStoneIngot");

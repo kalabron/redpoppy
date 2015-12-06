@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "down": "redpoppy:blocks/bloodBerryBush",
+        "up": "redpoppy:blocks/bloodBerryBush",
+        "north": "redpoppy:blocks/bloodBerryBush",
+        "south": "redpoppy:blocks/bloodBerryBush",
+        "west": "redpoppy:blocks/bloodBerryBush",
+        "east": "redpoppy:blocks/bloodBerryBush",
+        particle": "redpoppy:blocks/bloodBerryBush"
+    }
+}
