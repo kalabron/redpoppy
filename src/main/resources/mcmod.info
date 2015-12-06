@@ -1,0 +1,16 @@
+[
+{
+  "modid": "redpoppy",
+  "name": "Order of the Red Poppy",
+  "description": "An old secret society. The few that have heard of them are determined to find out all they can.  Powers, ancient riddles, and rituals are waiting to be discovered. It all starts with a book and a red poppy. ",
+  "version": "0.0.1.0",
+  "mcversion": "1.8",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Kalabron"],
+  "credits": "Thanks to Tory and Matt for helping test out this mod!",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
