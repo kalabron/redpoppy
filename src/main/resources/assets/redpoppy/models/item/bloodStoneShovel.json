@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "redpoppy:items/bloodPickAxe"
+        "layer0": "redpoppy:items/bloodStoneShovel"
     },
     "display":  {
         "thirdperson":  {

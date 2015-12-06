@@ -1,6 +1,8 @@
 package com.kalabron.redpoppy.items;
 
-import com.kalabron.redpoppy.items.tools.BloodPickAxe;
+import com.kalabron.redpoppy.items.tools.BloodStonePickAxe;
+import com.kalabron.redpoppy.items.tools.BloodStoneShovel;
+import com.kalabron.redpoppy.items.tools.BloodStoneSword;
 
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
@@ -11,7 +13,9 @@ public class ModItems
 {
 	static ToolMaterial poppium = EnumHelper.addToolMaterial("poppium", 3, 2000, 9.5F, 3.5F, 10);
 	
-	public static Item bloodPickAxe;
+	public static Item bloodStonePickAxe;
+	public static Item bloodStoneShovel;
+	public static Item bloodStoneSword;
 	public static Item bloodStoneDust;
 	public static Item bloodStoneIngot;
 	public static Item redPoppyBook;
@@ -40,8 +44,14 @@ public class ModItems
 		bloodBerry = new BloodBerry(3,0.3F, true);
 		GameRegistry.registerItem(bloodBerry, "bloodBerry");
 		
-		bloodPickAxe = new BloodPickAxe(poppium, "bloodPickAxe");
-		GameRegistry.registerItem(bloodPickAxe, "bloodPickAxe");
+		bloodStonePickAxe = new BloodStonePickAxe(poppium, "bloodStonePickAxe");
+		GameRegistry.registerItem(bloodStonePickAxe, "bloodStonePickAxe");
+		
+		bloodStoneShovel = new BloodStoneShovel(poppium, "bloodStoneShovel");
+		GameRegistry.registerItem(bloodStoneShovel, "bloodStoneShovel");
+		
+		bloodStoneSword = new BloodStoneSword(poppium, "bloodStoneSword");
+		GameRegistry.registerItem(bloodStoneSword, "bloodStoneSword");
 		
 	}
 

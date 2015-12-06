@@ -98,11 +98,24 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodBerryItem,  0, bloodBerryModel);
 		
-		Item bloodPickAxeItem = GameRegistry.findItem("redPoppy",  "bloodPickAxe");
-		ModelResourceLocation bloodPickAxeModel = 
-				new ModelResourceLocation("redpoppy:bloodPickAxe", "inventory");
+		Item bloodStonePickAxeItem = GameRegistry.findItem("redPoppy",  "bloodStonePickAxe");
+		ModelResourceLocation bloodStonePickAxeModel = 
+				new ModelResourceLocation("redpoppy:bloodStonePickAxe", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodPickAxeItem,  0, bloodPickAxeModel);
+			.register(bloodStonePickAxeItem,  0, bloodStonePickAxeModel);
+		
+		Item bloodStoneShovelItem = GameRegistry.findItem("redPoppy",  "bloodStoneShovel");
+		ModelResourceLocation bloodStoneShovelModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneShovel", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneShovelItem,  0, bloodStoneShovelModel);
+		
+		Item bloodStoneSwordItem = GameRegistry.findItem("redPoppy",  "bloodStoneSword");
+		ModelResourceLocation bloodStoneSwordModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneSword", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneSwordItem,  0, bloodStoneSwordModel);
+		
 		
 		// NEED TO ADD TEXTURE INSTRUCTIONS FOR Blood Berry Bush!!!
 		
@@ -140,8 +153,24 @@ public class Main
 		
 		
 		GameRegistry.addRecipe(
-				new ItemStack(bloodPickAxeItem),
+				new ItemStack(bloodStonePickAxeItem),
 				"eee",
+				" d ",
+				" d ",
+				'd', Items.stick,
+				'e', bloodStoneIngotItem);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(bloodStoneSwordItem),
+				" e ",
+				" e ",
+				" d ",
+				'd', Items.stick,
+				'e', bloodStoneIngotItem);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(bloodStoneShovelItem),
+				" e ",
 				" d ",
 				" d ",
 				'd', Items.stick,
