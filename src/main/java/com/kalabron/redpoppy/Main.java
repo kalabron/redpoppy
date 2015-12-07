@@ -117,6 +117,13 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodStonePickAxeItem,  0, bloodStonePickAxeModel);
 		
+		Item bloodStoneAxeItem = GameRegistry.findItem("redPoppy",  "bloodStoneAxe");
+		ModelResourceLocation bloodStoneAxeModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneAxe", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneAxeItem,  0, bloodStoneAxeModel);
+		
+		
 		Item bloodStoneShovelItem = GameRegistry.findItem("redPoppy",  "bloodStoneShovel");
 		ModelResourceLocation bloodStoneShovelModel = 
 				new ModelResourceLocation("redpoppy:bloodStoneShovel", "inventory");
@@ -172,6 +179,15 @@ public class Main
 				" d ",
 				'd', Items.stick,
 				'e', bloodStoneIngotItem);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(bloodStoneAxeItem),
+				"ee ",
+				"ed ",
+				" d ",
+				'd', Items.stick,
+				'e', bloodStoneIngotItem);
+		
 		
 		GameRegistry.addRecipe(
 				new ItemStack(bloodStoneSwordItem),
