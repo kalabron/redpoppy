@@ -91,6 +91,12 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodyScrapItem,  0, bloodyScrapModel);
 		
+		Item leatherScrapItem = GameRegistry.findItem("redpoppy",  "leatherScrap");
+		ModelResourceLocation leatherScrapModel = 
+				new ModelResourceLocation("redpoppy:leatherScrap", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(leatherScrapItem,  0, leatherScrapModel);
+		
 		
 		Item bloodBerryItem = GameRegistry.findItem("redPoppy",  "bloodBerry");
 		ModelResourceLocation bloodBerryModel = 
@@ -189,6 +195,12 @@ public class Main
 				bloodStoneDustItem,
 				new ItemStack(bloodStoneIngotItem, 1),
 				1.0F);
+		
+		GameRegistry.addSmelting(
+				bloodyScrapItem,
+				new ItemStack(leatherScrapItem, 1),
+				1.0F);
+		
 	}
 	
 	@EventHandler

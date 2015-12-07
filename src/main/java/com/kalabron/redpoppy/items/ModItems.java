@@ -22,6 +22,7 @@ public class ModItems
 	public static Item blackBloodKey;
 	public static Item bloodBerry;
 	public static Item bloodyScrap;
+	public static Item leatherScrap;
 	
 	
 	public static void loadItems()
@@ -37,6 +38,9 @@ public class ModItems
 		
 		bloodyScrap = new BloodyScrap();
 		GameRegistry.registerItem(bloodyScrap, "bloodyScrap");
+		
+		leatherScrap = new LeatherScrap();
+		GameRegistry.registerItem(leatherScrap, "leatherScrap");
 		
 		blackBloodKey = new BlackBloodKey();
 		GameRegistry.registerItem(blackBloodKey, "blackBloodKey");
