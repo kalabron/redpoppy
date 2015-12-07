@@ -1,5 +1,6 @@
 package com.kalabron.redpoppy.items;
 
+import com.kalabron.redpoppy.items.tools.BloodStoneAxe;
 import com.kalabron.redpoppy.items.tools.BloodStonePickAxe;
 import com.kalabron.redpoppy.items.tools.BloodStoneShovel;
 import com.kalabron.redpoppy.items.tools.BloodStoneSword;
@@ -15,6 +16,7 @@ public class ModItems
 	
 	public static Item bloodStonePickAxe;
 	public static Item bloodStoneShovel;
+	public static Item bloodStoneAxe;
 	public static Item bloodStoneSword;
 	public static Item bloodStoneDust;
 	public static Item bloodStoneIngot;
@@ -54,6 +56,10 @@ public class ModItems
 		
 		bloodStonePickAxe = new BloodStonePickAxe(poppium, "bloodStonePickAxe");
 		GameRegistry.registerItem(bloodStonePickAxe, "bloodStonePickAxe");
+		
+		bloodStoneAxe = new BloodStoneAxe(poppium, "bloodStoneAxe");
+		GameRegistry.registerItem(bloodStoneAxe, "bloodStoneAxe");
+		
 		
 		bloodStoneShovel = new BloodStoneShovel(poppium, "bloodStoneShovel");
 		GameRegistry.registerItem(bloodStoneShovel, "bloodStoneShovel");
