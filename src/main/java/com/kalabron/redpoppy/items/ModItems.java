@@ -20,6 +20,7 @@ public class ModItems
 	public static Item bloodStoneIngot;
 	public static Item redPoppyBook;
 	public static Item blackBloodKey;
+	public static Item greenBloodKey;
 	public static Item bloodBerry;
 	public static Item bloodyScrap;
 	public static Item leatherScrap;
@@ -44,6 +45,9 @@ public class ModItems
 		
 		blackBloodKey = new BlackBloodKey();
 		GameRegistry.registerItem(blackBloodKey, "blackBloodKey");
+		
+		greenBloodKey = new GreenBloodKey();
+		GameRegistry.registerItem(greenBloodKey, "greenBloodKey");
 		
 		bloodBerry = new BloodBerry(3,0.3F, true);
 		GameRegistry.registerItem(bloodBerry, "bloodBerry");

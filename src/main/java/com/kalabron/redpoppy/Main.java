@@ -85,6 +85,13 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(blackBloodKeyItem,  0, blackBloodKeyModel);
 		
+		Item greenBloodKeyItem = GameRegistry.findItem("redpoppy",  "greenBloodKey");
+		ModelResourceLocation greenBloodKeyModel = 
+				new ModelResourceLocation("redpoppy:greenBloodKey", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(greenBloodKeyItem,  0, greenBloodKeyModel);
+		
+		
 		Item bloodyScrapItem = GameRegistry.findItem("redpoppy",  "bloodyScrap");
 		ModelResourceLocation bloodyScrapModel = 
 				new ModelResourceLocation("redpoppy:bloodyScrap", "inventory");
