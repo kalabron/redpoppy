@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/kalabron/redpoppy.png?label=ready&title=Ready)](https://waffle.io/kalabron/redpoppy)
 Order of the Red Poppy
 ======================
 
