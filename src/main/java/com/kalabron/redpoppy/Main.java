@@ -211,6 +211,20 @@ public class Main
 				'd', Items.stick,
 				'e', bloodStoneIngotItem);
 		
+		GameRegistry.addRecipe(
+				new ItemStack(Items.leather),
+				"dd ",
+				"dd ",
+				"   ",
+				'd', leatherScrapItem);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(bloodStoneShearItem),
+				"   ",
+				" d ",
+				"d  ",
+				'd', bloodStoneIngotItem);
+		
 		
 		GameRegistry.addRecipe(
 				new ItemStack(bloodStoneOreItem),
