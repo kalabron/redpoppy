@@ -130,6 +130,12 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodStoneShovelItem,  0, bloodStoneShovelModel);
 		
+		Item bloodStoneShearItem = GameRegistry.findItem("redPoppy",  "bloodStoneShear");
+		ModelResourceLocation bloodStoneShearModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneShear", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneShearItem,  0, bloodStoneShearModel);
+		
 		Item bloodStoneSwordItem = GameRegistry.findItem("redPoppy",  "bloodStoneSword");
 		ModelResourceLocation bloodStoneSwordModel = 
 				new ModelResourceLocation("redpoppy:bloodStoneSword", "inventory");
