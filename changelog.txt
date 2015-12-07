@@ -6,7 +6,9 @@
 		• Added Bloodstone Dust
 		• Added Bloodstone Ingot
 		• Added Bloodstone Pickaxe
+		• Added Bloodstone Axe
 		• Added Bloodstone Shovel
+		• Added Bloodstone Shears
 		• Added Bloodstone Sword
 		• Added Bloodberry
 		• Added Bloody Scrap
@@ -24,7 +26,7 @@
 		• Added custom texture for Bloodstone Shovel
 		• Added custom texture for Bloodstone Sword
 		• Added custom texture for Bloodstone Axe
-		• Added custom texture for Bloodstone Shear
+		• Added custom texture for Bloodstone Shears
 		• Added custom texture for Bloodstone Helmet
 		• Added custom texture for Bloodstone Chestplate
 		• Added custom texture for Bloodstone Leggings
@@ -35,12 +37,13 @@
 		• Added Crafting Recipe for Order of the Red Poppy Book (Poppy + Book)
 		• Added Crafting Recipe for Bloodstone Block (Bloodstone Dust in all 9 slots)
 		• Added Crafting Recipe for Bloodstone Pickaxe (3 Bloodstone Ingots + 2 sticks)
+		• Added Crafting Recipe for Bloodstone Axe (3 Bloodstone Ingots + 2 sticks)
 		• Added Crafting Recipe for Bloodstone Shovel (1 Bloodstone Ingot + 2 sticks)
 		• Added Crafting Recipe for Bloodstone Sword (2 Bloodstone Ingots + 1 sticks)
 		• Added Recipe for Enchanted Stone Sword [Unbreaking] -- (Stone Sword + xx)
 		• Added Recipe for Enchanted Stone Sword [Knockback]  -- (Stone Sword + xx]
 	• Drops
-		• Added Bloody Scrap as random drop for Pig
+		• Added Bloody Scrap as random drop for Pig, Cow, and Sheep
 		• Added Bloodstone Dust as mining drop for Bloodstone Ore	
 	• Dungeon Changes
 		• Added Bloodstone Ingot as a random chance for Dungeon Chests loot
