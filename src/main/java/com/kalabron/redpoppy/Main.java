@@ -24,17 +24,17 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-@Mod(modid = Main.MODID, name = Main.MODNAME, version = Main.VERSION, dependencies = "required-after:FML")
+@Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION, dependencies = "required-after:FML")
 public class Main 
 {
-	public static final String MODID = "redpoppy";
-	public static final String MODNAME = "Order of the Red Poppy";
-	public static final String VERSION = "1.8-0.0.1.0";
+	// public static final String MODID = "redpoppy";
+	// public static final String MODNAME = "Order of the Red Poppy";
+	// public static final String VERSION = "1.8-0.0.1.0";
 	
-	@Instance(value = MODID)
+	@Instance(value = Reference.MODID)
 	public static Main instance;
 	
-	@SidedProxy(modId=MODID, clientSide="com.kalabron.redpoppy.proxies.ClientProxy", serverSide="com.kalabron.redpoppy.proxies.ServerProxy")
+	@SidedProxy(modId=Reference.MODID, clientSide="com.kalabron.redpoppy.proxies.ClientProxy", serverSide="com.kalabron.redpoppy.proxies.ServerProxy")
 	public static CommonProxy proxy;
 
 	
