@@ -27,7 +27,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION, dependencies = "required-after:FML")
 public class Main 
 {
-	// public static final String MODID = "redpoppy";
+	// public static final String MODID = "redpoppy";  <-- now moved to reference class
 	// public static final String MODNAME = "Order of the Red Poppy";
 	// public static final String VERSION = "1.8-0.0.1.0";
 	
@@ -43,7 +43,8 @@ public class Main
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		proxy.preInit(event);		
-		//Custom Blocks and Items
+		
+		//Load Custom Blocks and Items
 		ModBlocks.loadBlocks();
 		ModItems.loadItems();
 	}	
@@ -54,7 +55,7 @@ public class Main
 
 		proxy.init(event);
 				
-		//Custom Textures
+		//Register Custom Textures
 		Item bloodStoneOreItem = GameRegistry.findItem("redpoppy",  "bloodStoneOre");
 		ModelResourceLocation bloodStoneOreModel = 
 				new ModelResourceLocation("redpoppy:bloodStoneOre", "inventory");
@@ -89,8 +90,7 @@ public class Main
 		ModelResourceLocation greenBloodKeyModel = 
 				new ModelResourceLocation("redpoppy:greenBloodKey", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(greenBloodKeyItem,  0, greenBloodKeyModel);
-		
+			.register(greenBloodKeyItem,  0, greenBloodKeyModel);		
 		
 		Item bloodyScrapItem = GameRegistry.findItem("redpoppy",  "bloodyScrap");
 		ModelResourceLocation bloodyScrapModel = 
@@ -102,8 +102,7 @@ public class Main
 		ModelResourceLocation leatherScrapModel = 
 				new ModelResourceLocation("redpoppy:leatherScrap", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(leatherScrapItem,  0, leatherScrapModel);
-		
+			.register(leatherScrapItem,  0, leatherScrapModel);		
 		
 		Item bloodBerryItem = GameRegistry.findItem("redPoppy",  "bloodBerry");
 		ModelResourceLocation bloodBerryModel = 
@@ -121,8 +120,7 @@ public class Main
 		ModelResourceLocation bloodStoneAxeModel = 
 				new ModelResourceLocation("redpoppy:bloodStoneAxe", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodStoneAxeItem,  0, bloodStoneAxeModel);
-		
+			.register(bloodStoneAxeItem,  0, bloodStoneAxeModel);		
 		
 		Item bloodStoneShovelItem = GameRegistry.findItem("redPoppy",  "bloodStoneShovel");
 		ModelResourceLocation bloodStoneShovelModel = 
@@ -143,12 +141,18 @@ public class Main
 			.register(bloodStoneSwordItem,  0, bloodStoneSwordModel);
 		
 		
-		// NEED TO ADD TEXTURE INSTRUCTIONS FOR Blood Berry Bush!!!
+		// NEED TO ADD TEXTURE INSTRUCTIONS FOR Blood Berry Bush & Blood Berry!!!
 		
 		
-		//Dungeon changes
+		//Dungeon changes - add Bloodstone Ingots, Green Bloodkey & Black Bloodkey to chests
 		ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new
 				WeightedRandomChestContent(new ItemStack(bloodStoneIngotItem), 1,5,7));
+		
+		ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new
+				WeightedRandomChestContent(new ItemStack(blackBloodKeyItem), 1,5,7));
+		
+		ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new
+				WeightedRandomChestContent(new ItemStack(greenBloodKeyItem), 1,5,7));
 		
 		
 		//Recipes
