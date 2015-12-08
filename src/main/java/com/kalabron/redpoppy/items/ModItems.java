@@ -1,11 +1,14 @@
 package com.kalabron.redpoppy.items;
 
+import com.kalabron.redpoppy.Reference;
 import com.kalabron.redpoppy.items.tools.BloodStoneAxe;
 import com.kalabron.redpoppy.items.tools.BloodStonePickAxe;
 import com.kalabron.redpoppy.items.tools.BloodStoneShear;
 import com.kalabron.redpoppy.items.tools.BloodStoneShovel;
 import com.kalabron.redpoppy.items.tools.BloodStoneSword;
 
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraftforge.common.util.EnumHelper;
@@ -73,5 +76,29 @@ public class ModItems
 		GameRegistry.registerItem(bloodStoneSword, "bloodStoneSword");
 		
 	}
+	public static void registerItems()
+	{
+//		Item bloodStoneIngotItem = GameRegistry.findItem("redpoppy",  "bloodStoneIngot");
+//		ModelResourceLocation bloodStoneIngotModel = 
+//				new ModelResourceLocation("redpoppy:bloodStoneIngot", "inventory");
+//		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+//			.register(bloodStoneIngotItem,  0, bloodStoneIngotModel);
+	
+	}
+	
+
+	
+	
+//	public static void registerRenders() 
+//	{
+//		registerRender(test_item);
+//	}
+	
+//	public static void registerRender(Item item) {
+	      
+//		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5),"inventory"));
+
+
+//		}
 
 }
