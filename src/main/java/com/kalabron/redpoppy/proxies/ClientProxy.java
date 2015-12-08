@@ -1,5 +1,7 @@
 package com.kalabron.redpoppy.proxies;
 
+import com.kalabron.redpoppy.items.ModItems;
+
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
@@ -16,6 +18,12 @@ public class ClientProxy extends CommonProxy
 	public void init(FMLInitializationEvent e)
 	{
 		super.init(e);
+		
+//		 @Override
+//		  public void registerRenders() 
+//		 {
+//			ModItems.registerRenders();
+//		 }
 	}	
 
 	@Override

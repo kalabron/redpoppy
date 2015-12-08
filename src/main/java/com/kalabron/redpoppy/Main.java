@@ -27,16 +27,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 @Mod(modid = Reference.MODID, name = Reference.MODNAME, version = Reference.VERSION, dependencies = "required-after:FML")
 public class Main 
 {
-	// public static final String MODID = "redpoppy";  <-- now moved to reference class
-	// public static final String MODNAME = "Order of the Red Poppy";
-	// public static final String VERSION = "1.8-0.0.1.0";
-	
 	@Instance(value = Reference.MODID)
 	public static Main instance;
 	
-	@SidedProxy(modId=Reference.MODID, clientSide="com.kalabron.redpoppy.proxies.ClientProxy", serverSide="com.kalabron.redpoppy.proxies.ServerProxy")
+	@SidedProxy(modId=Reference.MODID, clientSide=Reference.CLIENT_PROXY_CLASS, serverSide=Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
-
 	
 	
 	@EventHandler
@@ -56,6 +51,14 @@ public class Main
 		proxy.init(event);
 				
 		//Register Custom Textures
+		ModItems.registerItems();
+		
+		
+		//TODO:  Move custom item textures from main to moditem in new method
+		//ModBlocks.registerBlocks();
+		//TODO:  Move custom block textures from main to modblocks in new method
+		//ModItems.registerItems();
+		
 		Item bloodStoneOreItem = GameRegistry.findItem("redpoppy",  "bloodStoneOre");
 		ModelResourceLocation bloodStoneOreModel = 
 				new ModelResourceLocation("redpoppy:bloodStoneOre", "inventory");
@@ -144,7 +147,7 @@ public class Main
 		// NEED TO ADD TEXTURE INSTRUCTIONS FOR Blood Berry Bush & Blood Berry!!!
 		
 		
-		//Dungeon changes - add Bloodstone Ingots, Green Bloodkey & Black Bloodkey to chests
+		//Dungeon changes - adds Bloodstone Ingots, Green Bloodkey & Black Bloodkey to chests
 		ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new
 				WeightedRandomChestContent(new ItemStack(bloodStoneIngotItem), 1,5,7));
 		
