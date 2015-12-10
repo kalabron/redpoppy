@@ -161,25 +161,82 @@ public class Main
 		//Recipes
 		RecipeHandler.registerRecipes();
 		
-		ItemStack knockbackItemStack = new ItemStack(Items.stone_sword);
-		knockbackItemStack.addEnchantment(Enchantment.knockback, 1);
+		//  Shapeless Crafting Recipes
+		//  coal = unbreaking
+		//  gunpowder = knockback
 		
-		GameRegistry.addShapelessRecipe(knockbackItemStack,
-				Items.gunpowder, Items.stone_sword);
+		ItemStack knockbackStoneSwordItemStack = new ItemStack(Items.stone_sword);
+		knockbackStoneSwordItemStack.addEnchantment(Enchantment.knockback, 1);
 		
-		ItemStack unbreakingItemStack = new ItemStack(Items.stone_sword);
-		unbreakingItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		GameRegistry.addShapelessRecipe(knockbackStoneSwordItemStack,
+				Items.gunpowder, Items.stone_sword, Blocks.red_flower );			
 		
-		GameRegistry.addShapelessRecipe(unbreakingItemStack,
-				Items.coal, Items.stone_sword);
+		ItemStack knockbackBloodStoneSwordItemStack = new ItemStack(bloodStoneSwordItem);
+		knockbackBloodStoneSwordItemStack.addEnchantment(Enchantment.knockback, 1);
+		
+		GameRegistry.addShapelessRecipe(knockbackBloodStoneSwordItemStack,
+				Items.gunpowder, bloodStoneSwordItem, Blocks.red_flower );				
+		
+		ItemStack unbreakingStoneSwordItemStack = new ItemStack(Items.stone_sword);
+		unbreakingStoneSwordItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingStoneSwordItemStack,
+				Items.coal, Items.stone_sword, Blocks.red_flower);			
+		
+		ItemStack unbreakingBloodStoneSwordItemStack = new ItemStack(bloodStoneSwordItem);
+		unbreakingBloodStoneSwordItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingBloodStoneSwordItemStack,
+				Items.coal, bloodStoneSwordItem, Blocks.red_flower);		
+		
+		ItemStack unbreakingStonePickAxeItemStack = new ItemStack(Items.stone_pickaxe);
+		unbreakingStonePickAxeItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingStonePickAxeItemStack,
+				Items.coal, Items.stone_pickaxe, Blocks.red_flower);		
+		
+		ItemStack unbreakingBloodStonePickAxeItemStack = new ItemStack(bloodStonePickAxeItem);
+		unbreakingBloodStonePickAxeItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingBloodStonePickAxeItemStack,
+				Items.coal, bloodStonePickAxeItem, Blocks.red_flower);		
+		
+		ItemStack unbreakingStoneShovelItemStack = new ItemStack(Items.stone_shovel);
+		unbreakingStoneShovelItemStack.addEnchantment(Enchantment.unbreaking, 1);
+				
+		GameRegistry.addShapelessRecipe(unbreakingStoneShovelItemStack,
+				Items.coal, Items.stone_shovel, Blocks.red_flower);		
+		
+		ItemStack unbreakingBloodStoneShovelItemStack = new ItemStack(bloodStoneShovelItem);
+		unbreakingBloodStoneShovelItemStack.addEnchantment(Enchantment.unbreaking, 1);
+				
+		GameRegistry.addShapelessRecipe(unbreakingBloodStoneShovelItemStack,
+				Items.coal, bloodStoneShovelItem, Blocks.red_flower);
+		
+		ItemStack unbreakingStoneAxeItemStack = new ItemStack(Items.stone_axe);
+		unbreakingStoneAxeItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingStoneAxeItemStack,
+				Items.coal, Items.stone_axe, Blocks.red_flower);
+		
+		ItemStack unbreakingBloodStoneAxeItemStack = new ItemStack(bloodStoneAxeItem);
+		unbreakingBloodStoneAxeItemStack.addEnchantment(Enchantment.unbreaking, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingBloodStoneAxeItemStack,
+				Items.coal, bloodStoneAxeItem, Blocks.red_flower);	
 		
 		
 		
+		
+		
+		
+		
+		// Shaped Crafting Recipes
 		
 		GameRegistry.addRecipe(
 				new ItemStack(redPoppyBookItem),
-				"d  ",
 				"e  ",
+				" e ",
 				"   ",
 				'd', Items.book,
 				'e', Blocks.red_flower);
@@ -241,6 +298,11 @@ public class Main
 				'd', bloodStoneDustItem);
 ;
 		
+
+		
+		
+		// Smelting Recipes
+
 		GameRegistry.addSmelting(
 				bloodStoneDustItem,
 				new ItemStack(bloodStoneIngotItem, 1),
