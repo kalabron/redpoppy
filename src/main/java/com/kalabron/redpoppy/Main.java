@@ -254,7 +254,7 @@ public class Main
 		GameRegistry.addRecipe(
 				new ItemStack(redPoppyBookItem),
 				"e  ",
-				" e ",
+				" d ",
 				"   ",
 				'd', Items.book,
 				'e', Blocks.red_flower);
