@@ -131,6 +131,12 @@ public class Main
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodStoneShovelItem,  0, bloodStoneShovelModel);
 		
+		Item bloodStoneHoeItem = GameRegistry.findItem("redPoppy",  "bloodStoneHoe");
+		ModelResourceLocation bloodStoneHoeModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneHoe", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneHoeItem,  0, bloodStoneHoeModel);
+		
 		Item bloodStoneShearItem = GameRegistry.findItem("redPoppy",  "bloodStoneShear");
 		ModelResourceLocation bloodStoneShearModel = 
 				new ModelResourceLocation("redpoppy:bloodStoneShear", "inventory");
@@ -211,7 +217,13 @@ public class Main
 		unbreakingBloodStoneShovelItemStack.addEnchantment(Enchantment.unbreaking, 1);
 				
 		GameRegistry.addShapelessRecipe(unbreakingBloodStoneShovelItemStack,
-				Items.coal, bloodStoneShovelItem, Blocks.red_flower);
+				Items.coal, bloodStoneShovelItem, Blocks.red_flower);		
+		
+		ItemStack unbreakingBloodStoneHoeItemStack = new ItemStack(bloodStoneHoeItem);
+		unbreakingBloodStoneHoeItemStack.addEnchantment(Enchantment.unbreaking, 1);
+				
+		GameRegistry.addShapelessRecipe(unbreakingBloodStoneHoeItemStack,
+				Items.coal, bloodStoneHoeItem, Blocks.red_flower);		
 		
 		ItemStack unbreakingStoneAxeItemStack = new ItemStack(Items.stone_axe);
 		unbreakingStoneAxeItemStack.addEnchantment(Enchantment.unbreaking, 1);
@@ -274,6 +286,9 @@ public class Main
 				" d ",
 				'd', Items.stick,
 				'e', bloodStoneIngotItem);
+		
+		// TODO: Add Shaped Crafting recipe for Bloodstone Hoe
+		
 		
 		GameRegistry.addRecipe(
 				new ItemStack(Items.leather),
