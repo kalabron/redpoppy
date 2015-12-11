@@ -211,7 +211,13 @@ public class Main
 		unbreakingStoneShovelItemStack.addEnchantment(Enchantment.unbreaking, 1);
 				
 		GameRegistry.addShapelessRecipe(unbreakingStoneShovelItemStack,
-				Items.coal, Items.stone_shovel, Blocks.red_flower);		
+				Items.coal, Items.stone_shovel, Blocks.red_flower);			
+		
+		ItemStack unbreakingStoneHoeItemStack = new ItemStack(Items.stone_hoe);
+		unbreakingStoneHoeItemStack.addEnchantment(Enchantment.unbreaking, 1);
+				
+		GameRegistry.addShapelessRecipe(unbreakingStoneHoeItemStack,
+				Items.coal, Items.stone_hoe, Blocks.red_flower);				
 		
 		ItemStack unbreakingBloodStoneShovelItemStack = new ItemStack(bloodStoneShovelItem);
 		unbreakingBloodStoneShovelItemStack.addEnchantment(Enchantment.unbreaking, 1);
@@ -287,8 +293,13 @@ public class Main
 				'd', Items.stick,
 				'e', bloodStoneIngotItem);
 		
-		// TODO: Add Shaped Crafting recipe for Bloodstone Hoe
-		
+		GameRegistry.addRecipe(
+				new ItemStack(bloodStoneHoeItem),
+				"ee ",
+				" d ",
+				" d ",
+				'd', Items.stick,
+				'e', bloodStoneIngotItem);
 		
 		GameRegistry.addRecipe(
 				new ItemStack(Items.leather),
