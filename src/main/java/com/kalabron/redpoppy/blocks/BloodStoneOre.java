@@ -2,6 +2,7 @@ package com.kalabron.redpoppy.blocks;
 
 import java.util.Random;
 
+import com.kalabron.redpoppy.Reference;
 import com.kalabron.redpoppy.items.ModItems;
 
 import net.minecraft.block.Block;
@@ -14,7 +15,7 @@ public class BloodStoneOre extends Block{
 	
 	public BloodStoneOre()  {
 		super(Material.iron);
-		this.setUnlocalizedName("bloodStoneOre");
+		this.setUnlocalizedName(Reference.MODID + "_" + "bloodStoneOre");
 		this.setCreativeTab(CreativeTabs.tabBlock);
 		this.setResistance(5.0F);
 		this.setHardness(2.0F);
