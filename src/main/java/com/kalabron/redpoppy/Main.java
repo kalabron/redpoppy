@@ -88,6 +88,9 @@ public class Main
 
 		
 		Item leatherScrapItem = GameRegistry.findItem("redpoppy",  "leatherScrap");
+		
+		
+		Item ruggedLeatherItem = GameRegistry.findItem("redpoppy",  "ruggedLeather");
 	
 		
 		Item bloodBerryItem = GameRegistry.findItem("redPoppy",  "bloodBerry");
