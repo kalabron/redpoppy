@@ -3,6 +3,7 @@ package com.kalabron.redpoppy.handlers;
 import java.util.Random;
 
 import com.kalabron.redpoppy.blocks.ModBlocks;
+import com.kalabron.redpoppy.worldgen.WorldGenBloodBerryBush;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -35,6 +36,15 @@ public class RedpoppyEventHandler implements IWorldGenerator {
 	private void generateNether(World world, Random random, int x, int z)
 	{
 		addOreSpawn(ModBlocks.bloodStoneOre.getDefaultState(), Blocks.netherrack, world, random, x, z, 16,16, 5 +random.nextInt(5), 4, 20, 40);
+		
+		for(int i = 0; i < 3; i++)
+		{
+			int posX = x + random.nextInt(16);
+			int posY = 50 + random.nextInt(35);
+			int posZ = z + random.nextInt(16);
+			new WorldGenBloodBerryBush().generate(world, random, new BlockPos(posX, posY, posZ));
+		}
+		
 	}
 	
 	private void generateSurface(World world, Random random, int x, int z)
