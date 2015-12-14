@@ -12,8 +12,10 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class ModItems 
 {
@@ -42,6 +44,11 @@ public class ModItems
 		
 		bloodStoneIngot = new BloodStoneIngot();
 		GameRegistry.registerItem(bloodStoneIngot, "bloodStoneIngot");
+		
+		OreDictionary.registerOre("ingotBloodstone", new ItemStack(bloodStoneIngot));
+		
+		
+		
 		
 		redPoppyBook = new RedPoppyBook();
 		GameRegistry.registerItem(redPoppyBook, "redPoppyBook");

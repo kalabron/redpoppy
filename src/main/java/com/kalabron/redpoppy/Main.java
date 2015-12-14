@@ -1,12 +1,11 @@
 package com.kalabron.redpoppy;
 
-import com.kalabron.redpoppy.blocks.ModBlocks;
 import com.kalabron.redpoppy.handlers.RecipeHandler;
+import com.kalabron.redpoppy.handlers.RedpoppyEventHandler;
+import com.kalabron.redpoppy.items.BloodStoneIngot;
 import com.kalabron.redpoppy.items.ModItems;
 import com.kalabron.redpoppy.proxies.CommonProxy;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -22,6 +21,8 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
+import net.minecraftforge.oredict.ShapedOreRecipe;
 
 
 
@@ -36,12 +37,15 @@ public class Main
 	@SidedProxy(modId=Reference.MODID, clientSide=Reference.CLIENT_PROXY_CLASS, serverSide=Reference.SERVER_PROXY_CLASS)
 	public static CommonProxy proxy;
 	
+	RedpoppyEventHandler handler = new RedpoppyEventHandler();
+	
 	
 	@EventHandler
 	public void preInit(FMLPreInitializationEvent event)
 	{
 		this.proxy.preInit(event);		
 		
+		GameRegistry.registerWorldGenerator(handler,  0);
 		//Load Custom Blocks and Items
 		// ModBlocks.loadBlocks();   <-- moved to common proxie
 		// ModItems.loadItems();    <-- moved to common proxie
@@ -105,7 +109,7 @@ public class Main
 
 		
 		Item bloodStoneSwordItem = GameRegistry.findItem("redPoppy",  "bloodStoneSword");
-
+		
 		
 		
 		// NEED TO ADD TEXTURE INSTRUCTIONS FOR Blood Berry Bush & Blood Berry!!!
@@ -218,46 +222,61 @@ public class Main
 				'e', Blocks.red_flower);
 		
 		
+//		GameRegistry.addRecipe(
+//				new ItemStack(bloodStonePickAxeItem),
+//				"eee",
+//				" d ",
+//				" d ",
+//				'd', Items.stick,
+//				'e', bloodStoneIngotItem);
+		
+		
 		GameRegistry.addRecipe(
-				new ItemStack(bloodStonePickAxeItem),
+				new ShapedOreRecipe(bloodStonePickAxeItem,
 				"eee",
 				" d ",
 				" d ",
 				'd', Items.stick,
-				'e', bloodStoneIngotItem);
-		
+				'e', "ingotBloodstone"));
+
 		GameRegistry.addRecipe(
-				new ItemStack(bloodStoneAxeItem),
+				new ShapedOreRecipe(bloodStoneAxeItem,
 				"ee ",
 				"ed ",
 				" d ",
 				'd', Items.stick,
-				'e', bloodStoneIngotItem);
-		
+				'e', "ingotBloodstone"));
 		
 		GameRegistry.addRecipe(
-				new ItemStack(bloodStoneSwordItem),
+				new ShapedOreRecipe(bloodStoneSwordItem,
 				" e ",
 				" e ",
 				" d ",
 				'd', Items.stick,
-				'e', bloodStoneIngotItem);
+				'e', "ingotBloodstone"));
 		
 		GameRegistry.addRecipe(
-				new ItemStack(bloodStoneShovelItem),
+				new ShapedOreRecipe(bloodStoneShovelItem,
 				" e ",
 				" d ",
 				" d ",
 				'd', Items.stick,
-				'e', bloodStoneIngotItem);
-		
+				'e', "ingotBloodstone"));
+	
 		GameRegistry.addRecipe(
-				new ItemStack(bloodStoneHoeItem),
+				new ShapedOreRecipe(bloodStoneHoeItem,
 				"ee ",
 				" d ",
 				" d ",
 				'd', Items.stick,
-				'e', bloodStoneIngotItem);
+				'e', "ingotBloodstone"));
+
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(bloodStoneShearItem,
+				"   ",
+				" d ",
+				"d  ",
+				'd', "ingotBloodstone"));
 		
 		GameRegistry.addRecipe(
 				new ItemStack(Items.leather),
@@ -265,13 +284,6 @@ public class Main
 				"dd ",
 				"   ",
 				'd', leatherScrapItem);
-		
-		GameRegistry.addRecipe(
-				new ItemStack(bloodStoneShearItem),
-				"   ",
-				" d ",
-				"d  ",
-				'd', bloodStoneIngotItem);
 		
 		
 		GameRegistry.addRecipe(
@@ -287,10 +299,17 @@ public class Main
 		
 		// Smelting Recipes
 
+//		GameRegistry.addSmelting(
+//				bloodStoneDustItem,
+//				new ItemStack(bloodStoneIngotItem, 1),
+//				1.0F);
+		
 		GameRegistry.addSmelting(
 				bloodStoneDustItem,
 				new ItemStack(bloodStoneIngotItem, 1),
 				1.0F);
+		
+		
 		
 		GameRegistry.addSmelting(
 				bloodyScrapItem,
