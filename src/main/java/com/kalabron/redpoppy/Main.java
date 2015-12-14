@@ -288,6 +288,12 @@ public class Main
 				"   ",
 				'd', leatherScrapItem);
 		
+		GameRegistry.addRecipe(
+				new ItemStack(ruggedLeatherItem),
+				"dd ",
+				"dd ",
+				"   ",
+				'd', Items.leather);		
 		
 		GameRegistry.addRecipe(
 				new ItemStack(bloodStoneOreItem),
