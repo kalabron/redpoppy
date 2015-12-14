@@ -1,7 +1,11 @@
 {
     "parent": "builtin/generated",
     "textures": {
+<<<<<<< HEAD
         "layer0": "redpoppy:items/bloodyBerryBush"
+=======
+        "layer0": "redpoppy:items/bloodBerryBush"
+>>>>>>> dev
     },
     "display":  {
         "thirdperson":  {
