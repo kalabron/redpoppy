@@ -82,7 +82,13 @@ public class ClientProxy extends CommonProxy
 		ModelResourceLocation bloodBerryModel = 
 				new ModelResourceLocation("redpoppy:bloodBerry", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodBerryItem,  0, bloodBerryModel);
+			.register(bloodBerryItem,  0, bloodBerryModel);		
+		
+		Item bloodBerryBushItem = GameRegistry.findItem("redPoppy",  "bloodBerryBush");
+		ModelResourceLocation bloodBerryBushModel = 
+				new ModelResourceLocation("redpoppy:bloodBerryBush", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodBerryBushItem,  0, bloodBerryBushModel);		
 		
 		Item bloodStonePickAxeItem = GameRegistry.findItem("redPoppy",  "bloodStonePickAxe");
 		ModelResourceLocation bloodStonePickAxeModel = 
@@ -119,6 +125,55 @@ public class ClientProxy extends CommonProxy
 				new ModelResourceLocation("redpoppy:bloodStoneSword", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodStoneSwordItem,  0, bloodStoneSwordModel);
+		
+		// armor
+		Item ruggedLeatherHelmetItem = GameRegistry.findItem("redPoppy",  "ruggedLeatherHelmet");
+		ModelResourceLocation ruggedLeatherHelmetModel = 
+				new ModelResourceLocation("redpoppy:ruggedLeatherHelmet", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(ruggedLeatherHelmetItem,  0, ruggedLeatherHelmetModel);
+		
+		Item ruggedLeatherChestplateItem = GameRegistry.findItem("redPoppy",  "ruggedLeatherChestplate");
+		ModelResourceLocation ruggedLeatherChestplateModel = 
+				new ModelResourceLocation("redpoppy:ruggedLeatherChestplate", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(ruggedLeatherChestplateItem,  0, ruggedLeatherChestplateModel);
+		
+		Item ruggedLeatherLeggingsItem = GameRegistry.findItem("redPoppy",  "ruggedLeatherLeggings");
+		ModelResourceLocation ruggedLeatherLeggingsModel = 
+				new ModelResourceLocation("redpoppy:ruggedLeatherLeggings", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(ruggedLeatherLeggingsItem,  0, ruggedLeatherLeggingsModel);
+		
+		Item ruggedLeatherBootsItem = GameRegistry.findItem("redPoppy",  "ruggedLeatherBoots");
+		ModelResourceLocation ruggedLeatherBootsModel = 
+				new ModelResourceLocation("redpoppy:ruggedLeatherBoots", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(ruggedLeatherBootsItem,  0, ruggedLeatherBootsModel);
+		
+		Item bloodStoneHelmetItem = GameRegistry.findItem("redPoppy",  "bloodStoneHelmet");
+		ModelResourceLocation bloodStoneHelmetModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneHelmet", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneHelmetItem,  0, bloodStoneHelmetModel);
+		
+		Item bloodStoneChestplateItem = GameRegistry.findItem("redPoppy",  "bloodStoneChestplate");
+		ModelResourceLocation bloodStoneChestplateModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneChestplate", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneChestplateItem,  0, bloodStoneChestplateModel);
+		
+		Item bloodStoneLeggingsItem = GameRegistry.findItem("redPoppy",  "bloodStoneLeggings");
+		ModelResourceLocation bloodStoneLeggingsModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneLeggings", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneLeggingsItem,  0, bloodStoneLeggingsModel);
+		
+		Item bloodStoneBootsItem = GameRegistry.findItem("redPoppy",  "bloodStoneBoots");
+		ModelResourceLocation bloodStoneBootsModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneBoots", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneBootsItem,  0, bloodStoneBootsModel);
 		
 	}	
 

@@ -7,11 +7,15 @@ import com.kalabron.redpoppy.items.tools.BloodStonePickAxe;
 import com.kalabron.redpoppy.items.tools.BloodStoneShear;
 import com.kalabron.redpoppy.items.tools.BloodStoneShovel;
 import com.kalabron.redpoppy.items.tools.BloodStoneSword;
+import com.kalabron.redpoppy.items.armor.BloodStoneArmor;
+import com.kalabron.redpoppy.items.armor.RuggedLeatherArmor;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
+import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
+import net.minecraft.item.ItemArmor.ArmorMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -19,14 +23,22 @@ import net.minecraftforge.oredict.OreDictionary;
 
 public class ModItems 
 {
+	//tool materials
 	static ToolMaterial poppium = EnumHelper.addToolMaterial("poppium", 3, 2000, 9.5F, 3.5F, 10);
 	
+	//armor materials
+	static ArmorMaterial ruggedleatherium = EnumHelper.addArmorMaterial("ruggedleatherium",  "ruggedleatherium",  20, new int[] { 3, 7, 6, 3 }, 10);
+	static ArmorMaterial bloodstonerium = EnumHelper.addArmorMaterial("bloodstonerium",  "bloodstonerium",  20, new int[] { 3, 7, 6, 3 }, 10);
+	
+	// tools
 	public static Item bloodStonePickAxe;
 	public static Item bloodStoneShovel;
 	public static Item bloodStoneHoe;
 	public static Item bloodStoneShear;
 	public static Item bloodStoneAxe;
 	public static Item bloodStoneSword;
+	
+	// Items
 	public static Item bloodStoneDust;
 	public static Item bloodStoneIngot;
 	public static Item redPoppyBook;
@@ -37,19 +49,39 @@ public class ModItems
 	public static Item leatherScrap;
 	public static Item ruggedLeather;
 	
+	// armor
+	public static Item ruggedLeatherHelmet;
+	public static Item ruggedLeatherChestplate;
+	public static Item ruggedLeatherLeggings;
+	public static Item ruggedLeatherBoots;
+	public static Item bloodStoneHelmet;
+	public static Item bloodStoneChestplate;
+	public static Item bloodStoneLeggings;
+	public static Item bloodStoneBoots;
+	
+	
 	
 	public static void loadItems()
 	{
+		// armor		
+		ruggedLeatherHelmet = new RuggedLeatherArmor(ruggedleatherium, 0, "ruggedLeatherHelmet");
+		ruggedLeatherChestplate = new RuggedLeatherArmor(ruggedleatherium, 1, "ruggedLeatherChestplate");
+		ruggedLeatherLeggings = new RuggedLeatherArmor(ruggedleatherium, 2, "ruggedLeatherLeggings");
+		ruggedLeatherBoots = new RuggedLeatherArmor(ruggedleatherium, 3, "ruggedLeatherBoots");
+		bloodStoneHelmet = new BloodStoneArmor(bloodstonerium, 0, "bloodStoneHelmet");
+		bloodStoneChestplate = new BloodStoneArmor(bloodstonerium, 1, "bloodStoneChestplate");
+		bloodStoneLeggings = new BloodStoneArmor(bloodstonerium, 2, "bloodStoneLeggings");
+		bloodStoneBoots = new BloodStoneArmor(bloodstonerium, 3, "bloodStoneBoots");
+				
+				
+		// Items
 		bloodStoneDust = new BloodStoneDust();
 		GameRegistry.registerItem(bloodStoneDust, "bloodStoneDust");
 		
 		bloodStoneIngot = new BloodStoneIngot();
 		GameRegistry.registerItem(bloodStoneIngot, "bloodStoneIngot");
 		
-		OreDictionary.registerOre("ingotBloodstone", new ItemStack(bloodStoneIngot));
-		
-		
-		
+		OreDictionary.registerOre("ingotBloodstone", new ItemStack(bloodStoneIngot));		
 		
 		redPoppyBook = new RedPoppyBook();
 		GameRegistry.registerItem(redPoppyBook, "redPoppyBook");
@@ -72,6 +104,8 @@ public class ModItems
 		bloodBerry = new BloodBerry(3,0.3F, true);
 		GameRegistry.registerItem(bloodBerry, "bloodBerry");
 		
+		
+		// tools
 		bloodStonePickAxe = new BloodStonePickAxe(poppium, "bloodStonePickAxe");
 		GameRegistry.registerItem(bloodStonePickAxe, "bloodStonePickAxe");
 		
@@ -91,29 +125,15 @@ public class ModItems
 		GameRegistry.registerItem(bloodStoneSword, "bloodStoneSword");
 		
 	}
+	
+
+	
 	public static void registerItems()
 	{
-//		Item bloodStoneIngotItem = GameRegistry.findItem("redpoppy",  "bloodStoneIngot");
-//		ModelResourceLocation bloodStoneIngotModel = 
-//				new ModelResourceLocation("redpoppy:bloodStoneIngot", "inventory");
-//		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-//			.register(bloodStoneIngotItem,  0, bloodStoneIngotModel);
+
 	
 	}
 	
 
-	
-	
-//	public static void registerRenders() 
-//	{
-//		registerRender(test_item);
-//	}
-	
-//	public static void registerRender(Item item) {
-	      
-//		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5),"inventory"));
-
-
-//		}
 
 }
