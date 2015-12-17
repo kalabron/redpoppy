@@ -37,6 +37,12 @@ public class RedpoppyEventHandler implements IWorldGenerator {
 	{
 		addOreSpawn(ModBlocks.bloodStoneOre.getDefaultState(), Blocks.netherrack, world, random, x, z, 16,16, 5 +random.nextInt(5), 4, 20, 40);
 		
+	}
+	
+	private void generateSurface(World world, Random random, int x, int z)
+	{
+		addOreSpawn(ModBlocks.bloodStoneOre.getDefaultState(), Blocks.stone, world, random, x, z, 16,16, 5 +random.nextInt(5), 4, 20, 40);
+	
 		for(int i = 0; i < 3; i++)
 		{
 			int posX = x + random.nextInt(16);
@@ -44,12 +50,6 @@ public class RedpoppyEventHandler implements IWorldGenerator {
 			int posZ = z + random.nextInt(16);
 			new WorldGenBloodBerryBush().generate(world, random, new BlockPos(posX, posY, posZ));
 		}
-		
-	}
-	
-	private void generateSurface(World world, Random random, int x, int z)
-	{
-		addOreSpawn(ModBlocks.bloodStoneOre.getDefaultState(), Blocks.stone, world, random, x, z, 16,16, 5 +random.nextInt(5), 4, 20, 40);
 	}
 	
 	private void generateEnd(World world, Random random, int x, int z)
