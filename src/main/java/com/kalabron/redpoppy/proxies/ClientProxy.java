@@ -82,7 +82,13 @@ public class ClientProxy extends CommonProxy
 		ModelResourceLocation bloodBerryModel = 
 				new ModelResourceLocation("redpoppy:bloodBerry", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodBerryItem,  0, bloodBerryModel);
+			.register(bloodBerryItem,  0, bloodBerryModel);		
+		
+		Item bloodBerryBushItem = GameRegistry.findItem("redPoppy",  "bloodBerryBush");
+		ModelResourceLocation bloodBerryBushModel = 
+				new ModelResourceLocation("redpoppy:bloodBerryBush", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodBerryBushItem,  0, bloodBerryBushModel);		
 		
 		
 		

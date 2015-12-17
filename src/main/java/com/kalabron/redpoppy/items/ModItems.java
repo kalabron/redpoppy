@@ -125,6 +125,7 @@ public class ModItems
 		GameRegistry.registerItem(bloodStoneSword, "bloodStoneSword");
 		
 	}
+<<<<<<< HEAD
 	
 
 	
@@ -137,20 +138,17 @@ public class ModItems
 //			.register(bloodStoneIngotItem,  0, bloodStoneIngotModel);
 	
 	}
+=======
+>>>>>>> dev
 	
 
 	
-	
-//	public static void registerRenders() 
-//	{
-//		registerRender(test_item);
-//	}
-	
-//	public static void registerRender(Item item) {
-	      
-//		Minecraft.getMinecraft().getRenderItem().getItemModelMesher().register(item, 0, new ModelResourceLocation(Reference.MODID + ":" + item.getUnlocalizedName().substring(5),"inventory"));
+	public static void registerItems()
+	{
 
+	
+	}
+	
 
-//		}
 
 }
