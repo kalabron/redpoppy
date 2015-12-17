@@ -179,11 +179,11 @@ public class RecipeHandler
 				'd', "ingotBloodstone"));
 		
 		GameRegistry.addRecipe(
-				new ItemStack(Items.leather),
+				new ShapedOreRecipe(Items.leather,
 				"dd ",
 				"dd ",
 				"   ",
-				'd', leatherScrapItem);
+				'd', "materialLeatherScrap"));		
 		
 		GameRegistry.addRecipe(
 				new ItemStack(ruggedLeatherItem),
@@ -193,11 +193,12 @@ public class RecipeHandler
 				'd', Items.leather);		
 		
 		GameRegistry.addRecipe(
-				new ItemStack(bloodStoneOreItem),
+				new ShapedOreRecipe(bloodStoneOreItem,
 				"ddd",
 				"ddd",
 				"ddd",
-				'd', bloodStoneDustItem);
+				'd', "dustBloodStone"));
+		
 		
 		
 		//Smelting Recipes
