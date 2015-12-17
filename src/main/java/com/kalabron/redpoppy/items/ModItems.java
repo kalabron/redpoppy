@@ -77,10 +77,10 @@ public class ModItems
 		// Items
 		bloodStoneDust = new BloodStoneDust();
 		GameRegistry.registerItem(bloodStoneDust, "bloodStoneDust");
+		OreDictionary.registerOre("dustBloodstone", new ItemStack(bloodStoneDust));	
 		
 		bloodStoneIngot = new BloodStoneIngot();
-		GameRegistry.registerItem(bloodStoneIngot, "bloodStoneIngot");
-		
+		GameRegistry.registerItem(bloodStoneIngot, "bloodStoneIngot");		
 		OreDictionary.registerOre("ingotBloodstone", new ItemStack(bloodStoneIngot));		
 		
 		redPoppyBook = new RedPoppyBook();
@@ -91,9 +91,11 @@ public class ModItems
 		
 		leatherScrap = new LeatherScrap();
 		GameRegistry.registerItem(leatherScrap, "leatherScrap");
+		OreDictionary.registerOre("materialLeatherScrap", new ItemStack(leatherScrap));	
 		
 		ruggedLeather = new RuggedLeather();
 		GameRegistry.registerItem(ruggedLeather, "ruggedLeather");
+		OreDictionary.registerOre("materialRuggedLeather", new ItemStack(ruggedLeather));	
 		
 		blackBloodKey = new BlackBloodKey();
 		GameRegistry.registerItem(blackBloodKey, "blackBloodKey");
@@ -125,21 +127,6 @@ public class ModItems
 		GameRegistry.registerItem(bloodStoneSword, "bloodStoneSword");
 		
 	}
-<<<<<<< HEAD
-	
-
-	
-	public static void registerItems()
-	{
-//		Item bloodStoneIngotItem = GameRegistry.findItem("redpoppy",  "bloodStoneIngot");
-//		ModelResourceLocation bloodStoneIngotModel = 
-//				new ModelResourceLocation("redpoppy:bloodStoneIngot", "inventory");
-//		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-//			.register(bloodStoneIngotItem,  0, bloodStoneIngotModel);
-	
-	}
-=======
->>>>>>> dev
 	
 
 	
