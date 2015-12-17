@@ -15,8 +15,6 @@ import net.minecraftforge.oredict.ShapedOreRecipe;
 
 public class RecipeHandler 
 {
-	 //public static Item redPoppyBook;
-
 	
 	public static void registerRecipes()
 	{
@@ -45,15 +43,17 @@ public class RecipeHandler
 		Item ruggedLeatherLeggingsItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherLeggings");
 		Item ruggedLeatherBootsItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherBoots");
 		
-		// Drops on death
+		// Drops on death - Calls Handlers
 		MinecraftForge.EVENT_BUS.register(new PigDropsBloodyScraps());
 		MinecraftForge.EVENT_BUS.register(new CowDropsBloodyScraps());
 		MinecraftForge.EVENT_BUS.register(new SheepDropsBloodyScraps());
-
+		MinecraftForge.EVENT_BUS.register(new ChickenDropsBloodyScraps());
+		MinecraftForge.EVENT_BUS.register(new PigZombieDropsRuggedLeather());
 		
 		// Enchantment recipes
-		// 		coal = unbreaking
-		// 		gunpowder = knockback
+		// 		coal = unbreaking (all tools and swords)
+		// 		gunpowder = knockback (sword only)
+		//		feather = respiration (head only)
 		
 		ItemStack knockbackStoneSwordItemStack = new ItemStack(Items.stone_sword);
 		knockbackStoneSwordItemStack.addEnchantment(Enchantment.knockback, 1);
@@ -126,6 +126,16 @@ public class RecipeHandler
 		
 		GameRegistry.addShapelessRecipe(unbreakingBloodStoneAxeItemStack,
 				Items.coal, bloodStoneAxeItem, Blocks.red_flower);	
+		
+		
+		
+		
+		
+		ItemStack unbreakingBloodStoneHelmetItemStack = new ItemStack(bloodStoneHelmetItem);
+		unbreakingBloodStoneHelmetItemStack.addEnchantment(Enchantment.respiration, 1);
+		
+		GameRegistry.addShapelessRecipe(unbreakingBloodStoneHelmetItemStack,
+				Items.feather, bloodStoneHelmetItem, Blocks.red_flower);	
 		
 		
 		// Shaped Crafting Recipes
@@ -264,20 +274,12 @@ public class RecipeHandler
 		
 		
 		
-		
-		
-		
-		
-		
-		
 		//Smelting Recipes
 		
 		GameRegistry.addSmelting(
 				bloodStoneDustItem,
 				new ItemStack(bloodStoneIngotItem, 1),
-				1.0F);
-		
-		
+				1.0F);		
 		
 		GameRegistry.addSmelting(
 				bloodyScrapItem,
