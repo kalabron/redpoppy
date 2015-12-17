@@ -36,7 +36,14 @@ public class RecipeHandler
 		Item bloodStoneIngotItem = GameRegistry.findItem("redpoppy",  "bloodStoneIngot");
 		Item blackBloodKeyItem = GameRegistry.findItem("redpoppy",  "blackBloodKey");		
 		Item greenBloodKeyItem = GameRegistry.findItem("redpoppy",  "greenBloodKey");
-
+		Item bloodStoneHelmetItem = GameRegistry.findItem("redpoppy",  "bloodStoneHelmet");
+		Item bloodStoneChestplateItem = GameRegistry.findItem("redpoppy",  "bloodStoneChestplate");
+		Item bloodStoneLeggingsItem = GameRegistry.findItem("redpoppy",  "bloodStoneLeggings");
+		Item bloodStoneBootsItem = GameRegistry.findItem("redpoppy",  "bloodStoneBoots");
+		Item ruggedLeatherHelmetItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherHelmet");
+		Item ruggedLeatherChestplateItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherChestplate");
+		Item ruggedLeatherLeggingsItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherLeggings");
+		Item ruggedLeatherBootsItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherBoots");
 		
 		// Drops on death
 		MinecraftForge.EVENT_BUS.register(new PigDropsBloodyScraps());
@@ -198,6 +205,68 @@ public class RecipeHandler
 				"ddd",
 				"ddd",
 				'd', "dustBloodStone"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(bloodStoneHelmetItem,
+				"ddd",
+				"d d",
+				"   ",
+				'd', "ingotBloodstone"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(bloodStoneChestplateItem,
+				"d d",
+				"ddd",
+				"ddd",
+				'd', "ingotBloodstone"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(bloodStoneLeggingsItem,
+				"ddd",
+				"d d",
+				"d d",
+				'd', "ingotBloodstone"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(bloodStoneBootsItem,
+				"   ",
+				"d d",
+				"d d",
+				'd', "ingotBloodstone"));		
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(ruggedLeatherHelmetItem,
+				"ddd",
+				"d d",
+				"   ",
+				'd', "materialRuggedLeather"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(ruggedLeatherChestplateItem,
+				"d d",
+				"ddd",
+				"ddd",
+				'd', "materialRuggedLeather"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(ruggedLeatherLeggingsItem,
+				"ddd",
+				"d d",
+				"d d",
+				'd', "materialRuggedLeather"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(ruggedLeatherBootsItem,
+				"   ",
+				"d d",
+				"d d",
+				'd', "materialRuggedLeather"));
+		
+		
+		
+		
+		
+		
 		
 		
 		
