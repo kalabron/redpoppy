@@ -1,4 +1,44 @@
-0.0.1.0  (Alpha)
+8.1-0.2.0  (Alpha)
+	• Items:
+		• Added Bloodstone Helmet
+		• Added Bloodstone Chestplate
+		• Added Bloodstone Leggings
+		• Added Bloodstone Boots
+		• Added Rugged Leather
+		• Added Rugged Leather Helmet
+		• Added Rugged Leather Chestplate
+		• Added Rugged Leather Leggings
+		• Added Rugged Leather Boots
+	• Textures:
+		• Added custom texture for Bloodstone Helmet
+		• Added custom texture for Bloodstone Chestplate
+		• Added custom texture for Bloodstone Leggings
+		• Added custom texture for Bloodstone Boots
+		• Added custom texture for Rugged Leather Helmet
+		• Added custom texture for Rugged Leather Chestplate
+		• Added custom texture for Rugged Leather Leggings
+		• Added custom texture for Rugged Leather Boots
+	• Recipes
+		• Added Crafting Recipe for 4 leathers --> Rugged Leather
+		• Added Crafting Recipe for Rugged Leather Armor Set (uses ore Dictionary)
+		• Added Crafting Recipe for Bloodstone Armorr Set (uses ore Dictionary)
+		• Added Recipe for Enchanted Bloodstone Helmet [Respiration]  -- (Bloodstone Helmet + feather + poppy]
+	• World Gen:
+		• Added Bloodstone Ore to World Gen
+		• Added Bloodberry Bushes to World Gen
+	• Ore Dictionary
+		• Added Bloodstone Ingot to the Ore Dictionary
+		• Added Bloodstone Ore to the Ore Dictionary
+		• Added Bloodstone Dust to the Ore Dictionary
+		• Added Leather Scrap to the Ore Dictionary
+		• Added Rugged Leather to the Ore Dictionary
+		• Updated all crafting recipes using Bloodstone Ingots, Ores, Dusts to use Ore Dictionary versions
+		• Updated all crafting recipes using Leather Scraps to use Ore Dictionary version
+
+8.1-0.1.1  (Alpha)
+	• Hotfix
+		• Fixed Multiplayer Server Crashing (Render Issue)
+8.1-0.1.0  (Alpha)
 	• Blocks
 		• Added Bloodstone Ore
 		• Added Bloodberry Bush
@@ -49,16 +89,16 @@
 		• Added Crafting Recipe for Bloodstone Shears (2 Bloodstone Ingots)
 		• Added Recipe for Enchanted Stone Sword [Knockback]  -- (Stone Sword + Gun Powder + poppy]
 		• Added Recipe for Enchanted Stone Sword [Unbreaking] -- (Stone Sword + coal + poppy)
-        • Added Recipe for Enchanted Stone Axe [Unbreaking] -- (Stone Axe + coal + poppy)
-        • Added Recipe for Enchanted Stone Shovel [Unbreaking] -- (Stone Shovel + coal + poppy)
-        • Added Recipe for Enchanted Stone Hoe [Unbreaking] -- (Stone Hoe + coal + poppy)
-        • Added Recipe for Enchanted Stone Pickaxe [Unbreaking] -- (Stone Pickaxe + coal + poppy)
-        • Added Recipe for Enchanted Bloodstone Sword [Knockback]  -- (Bloodstone Sword + Gun Powder + poppy]
-        • Added Recipe for Enchanted Bloodstone Sword [Unbreaking] -- (Bloodstone Sword + coal + poppy)
-        • Added Recipe for Enchanted Bloodstone Axe [Unbreaking] -- (Bloodstone Axe + coal + poppy)
-        • Added Recipe for Enchanted Bloodstone Shovel [Unbreaking] -- (Bloodstone Shovel + coal + poppy)
-        • Added Recipe for Enchanted Bloodstone Hoe [Unbreaking] -- (Bloodstone Hoe + coal + poppy)
-        • Added Recipe for Enchanted Bloodstone Pickaxe [Unbreaking] -- (Bloodstone Pickaxe + coal + poppy)
+        	• Added Recipe for Enchanted Stone Axe [Unbreaking] -- (Stone Axe + coal + poppy)
+        	• Added Recipe for Enchanted Stone Shovel [Unbreaking] -- (Stone Shovel + coal + poppy)
+        	• Added Recipe for Enchanted Stone Hoe [Unbreaking] -- (Stone Hoe + coal + poppy)
+        	• Added Recipe for Enchanted Stone Pickaxe [Unbreaking] -- (Stone Pickaxe + coal + poppy)
+        	• Added Recipe for Enchanted Bloodstone Sword [Knockback]  -- (Bloodstone Sword + Gun Powder + poppy]
+        	• Added Recipe for Enchanted Bloodstone Sword [Unbreaking] -- (Bloodstone Sword + coal + poppy)
+        	• Added Recipe for Enchanted Bloodstone Axe [Unbreaking] -- (Bloodstone Axe + coal + poppy)
+        	• Added Recipe for Enchanted Bloodstone Shovel [Unbreaking] -- (Bloodstone Shovel + coal + poppy)
+        	• Added Recipe for Enchanted Bloodstone Hoe [Unbreaking] -- (Bloodstone Hoe + coal + poppy)
+        	• Added Recipe for Enchanted Bloodstone Pickaxe [Unbreaking] -- (Bloodstone Pickaxe + coal + poppy)
 	• Drops
 		• Added Bloody Scrap as random drop for Pig, Cow, and Sheep
 		• Added Bloodstone Dust as mining drop for Bloodstone Ore	
