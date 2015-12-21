@@ -53,7 +53,7 @@ public class RecipeHandler
 		// Enchantment recipes
 		// 		coal = unbreaking (all tools and swords)
 		// 		gunpowder = knockback (sword only)
-		//		feather = respiration (head only)
+		//		feather = respiration (head only), featherFalling (boots only)
 		
 		ItemStack knockbackStoneSwordItemStack = new ItemStack(Items.stone_sword);
 		knockbackStoneSwordItemStack.addEnchantment(Enchantment.knockback, 1);
@@ -130,12 +130,45 @@ public class RecipeHandler
 		
 		
 		
+		// Bloodstone Armor Enchanting Recipes
+		ItemStack respirationBloodStoneHelmetItemStack = new ItemStack(bloodStoneHelmetItem);
+		respirationBloodStoneHelmetItemStack.addEnchantment(Enchantment.respiration, 1);
 		
-		ItemStack unbreakingBloodStoneHelmetItemStack = new ItemStack(bloodStoneHelmetItem);
-		unbreakingBloodStoneHelmetItemStack.addEnchantment(Enchantment.respiration, 1);
-		
-		GameRegistry.addShapelessRecipe(unbreakingBloodStoneHelmetItemStack,
+		GameRegistry.addShapelessRecipe(respirationBloodStoneHelmetItemStack,
 				Items.feather, bloodStoneHelmetItem, Blocks.red_flower);	
+		
+		ItemStack featherFallingBloodStoneBootsItemStack = new ItemStack(bloodStoneBootsItem);
+		featherFallingBloodStoneBootsItemStack.addEnchantment(Enchantment.featherFalling, 1);
+		
+		GameRegistry.addShapelessRecipe(featherFallingBloodStoneBootsItemStack,
+				Items.feather, bloodStoneHelmetItem, Blocks.red_flower);	
+		
+		// Rugged Leather Enchanting Recipes
+		ItemStack respirationRuggedLeatherHelmetItemStack = new ItemStack(ruggedLeatherHelmetItem);
+		respirationRuggedLeatherHelmetItemStack.addEnchantment(Enchantment.respiration, 1);
+		
+		GameRegistry.addShapelessRecipe(respirationRuggedLeatherHelmetItemStack,
+				Items.feather, ruggedLeatherHelmetItem, Blocks.red_flower);	
+		
+		ItemStack featherFallingRuggedLeatherBootsItemStack = new ItemStack(ruggedLeatherBootsItem);
+		featherFallingRuggedLeatherBootsItemStack.addEnchantment(Enchantment.featherFalling, 1);
+		
+		GameRegistry.addShapelessRecipe(featherFallingRuggedLeatherBootsItemStack,
+				Items.feather, ruggedLeatherBootsItem, Blocks.red_flower);	
+		
+		// Leather Enchanting Recipes
+		ItemStack respirationLeatherHelmetItemStack = new ItemStack(Items.leather_helmet);
+		respirationLeatherHelmetItemStack.addEnchantment(Enchantment.respiration, 1);
+		
+		GameRegistry.addShapelessRecipe(respirationLeatherHelmetItemStack,
+				Items.feather, Items.leather_helmet, Blocks.red_flower);	
+		
+		ItemStack featherFallingLeatherBootsItemStack = new ItemStack(Items.leather_boots);
+		featherFallingLeatherBootsItemStack.addEnchantment(Enchantment.featherFalling, 1);
+		
+		GameRegistry.addShapelessRecipe(featherFallingLeatherBootsItemStack,
+				Items.feather, Items.leather_boots, Blocks.red_flower);	
+		
 		
 		
 		// Shaped Crafting Recipes
