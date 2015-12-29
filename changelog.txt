@@ -23,6 +23,11 @@
 		• Added Crafting Recipe for Rugged Leather Armor Set (uses ore Dictionary)
 		• Added Crafting Recipe for Bloodstone Armorr Set (uses ore Dictionary)
 		• Added Recipe for Enchanted Bloodstone Helmet [Respiration]  -- (Bloodstone Helmet + feather + poppy]
+		• Added Recipe for Enchanted Bloodstone boots [feather fall]  -- (Bloodstone boots + feather + poppy]
+		• Added Recipe for Enchanted Leather Helmet [Respiration]  -- (Bloodstone Helmet + feather + poppy]
+        • Added Recipe for Enchanted Leather boots [feather fall]  -- (Bloodstone boots + feather + poppy]
+        • Added Recipe for Enchanted Rugged Leather Helmet [Respiration]  -- (Bloodstone Helmet + feather + poppy]
+        • Added Recipe for Enchanted Rugged Leather boots [feather fall]  -- (Bloodstone boots + feather + poppy]
 	• Drops
 		• Added Rugged Leather as random drop for Zombie Pigman
 	• World Gen:
