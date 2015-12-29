@@ -29,6 +29,7 @@ public class RecipeHandler
 		Item leatherScrapItem = GameRegistry.findItem("redpoppy",  "leatherScrap");
 		Item ruggedLeatherItem = GameRegistry.findItem("redpoppy",  "ruggedLeather");
 		Item bloodStoneOreItem = GameRegistry.findItem("redpoppy",  "bloodStoneOre");
+		Item bloodStoneBlockItem = GameRegistry.findItem("redpoppy",  "bloodStoneBlock");
 		Item bloodStoneDustItem = GameRegistry.findItem("redpoppy",  "bloodStoneDust");
 		Item bloodyScrapItem = GameRegistry.findItem("redpoppy",  "bloodyScrap");
 		Item bloodStoneIngotItem = GameRegistry.findItem("redpoppy",  "bloodStoneIngot");
@@ -59,7 +60,7 @@ public class RecipeHandler
 		knockbackStoneSwordItemStack.addEnchantment(Enchantment.knockback, 1);
 		
 		GameRegistry.addShapelessRecipe(knockbackStoneSwordItemStack,
-				Items.gunpowder, Items.stone_sword, Blocks.red_flower );
+				Items.gunpowder, Items.stone_sword, Blocks.red_flower );		
 		
 		ItemStack knockbackBloodStoneSwordItemStack = new ItemStack(bloodStoneSwordItem);
 		knockbackBloodStoneSwordItemStack.addEnchantment(Enchantment.knockback, 1);
@@ -248,6 +249,14 @@ public class RecipeHandler
 				"ddd",
 				"ddd",
 				'd', "dustBloodStone"));
+		
+		GameRegistry.addRecipe(
+				new ShapedOreRecipe(bloodStoneBlockItem,
+				"ddd",
+				"ddd",
+				"ddd",
+				'd', "ingotBloodstone"));
+		
 		
 		GameRegistry.addRecipe(
 				new ShapedOreRecipe(bloodStoneHelmetItem,

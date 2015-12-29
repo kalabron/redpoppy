@@ -23,6 +23,11 @@ public class ClientProxy extends CommonProxy
 	{
 		super.init(e);
 		
+		Item bloodStoneBlockItem = GameRegistry.findItem("redpoppy",  "bloodStoneBlock");
+		ModelResourceLocation bloodStoneBlockModel = 
+				new ModelResourceLocation("redpoppy:bloodStoneBlock", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(bloodStoneBlockItem,  0, bloodStoneBlockModel);
 
 		Item bloodStoneOreItem = GameRegistry.findItem("redpoppy",  "bloodStoneOre");
 		ModelResourceLocation bloodStoneOreModel = 
@@ -90,18 +95,6 @@ public class ClientProxy extends CommonProxy
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodBerryBushItem,  0, bloodBerryBushModel);		
 		
-		
-		
-		
-		Item bloodBerryBushItem = GameRegistry.findItem("redPoppy",  "bloodBerryBush");
-		ModelResourceLocation bloodBerryBushModel = 
-				new ModelResourceLocation("redpoppy:bloodBerryBush", "inventory");
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodBerryBushItem,  0, bloodBerryBushModel);
-		
-		
-		
-		
 		Item bloodStonePickAxeItem = GameRegistry.findItem("redPoppy",  "bloodStonePickAxe");
 		ModelResourceLocation bloodStonePickAxeModel = 
 				new ModelResourceLocation("redpoppy:bloodStonePickAxe", "inventory");
@@ -137,6 +130,16 @@ public class ClientProxy extends CommonProxy
 				new ModelResourceLocation("redpoppy:bloodStoneSword", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(bloodStoneSwordItem,  0, bloodStoneSwordModel);
+		
+		
+		Item charmItem = GameRegistry.findItem("redpoppy",  "charm");
+		ModelResourceLocation charmModel = 
+				new ModelResourceLocation("redpoppy:charm", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(charmItem,  0, charmModel);
+		
+		
+		
 		
 		// armor
 		Item ruggedLeatherHelmetItem = GameRegistry.findItem("redPoppy",  "ruggedLeatherHelmet");
