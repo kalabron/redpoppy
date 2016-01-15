@@ -1,4 +1,5 @@
 tile.redpoppy_bloodStoneOre.name=Bloodstone Ore
+tile.redpoppy_bloodStoneBlock.name=Bloodstone Block
 item.redpoppy_bloodStoneDust.name=Bloodstone Dust
 item.redpoppy_bloodStoneIngot.name=Bloodstone Ingot
 item.redpoppy_redPoppyBook.name=Order of the Red Poppy Book
@@ -22,4 +23,3 @@ item.redpoppy_bloodStoneChestplate.name=Bloodstone Chestplate
 item.redpoppy_bloodStoneLeggings.name=Bloodstone Leggings
 item.redpoppy_bloodStoneBoots.name=Bloodstone Boots
 item.redpoppy_charm.name=Charm
-item.redpoppy_bloodStoneBlock.name=Bloodstone Block

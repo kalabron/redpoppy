@@ -314,7 +314,8 @@ public class RecipeHandler
 				"d d",
 				'd', "materialRuggedLeather"));
 		
-		
+		//shapeless recipes
+		GameRegistry.addShapelessRecipe(new ItemStack(bloodStoneIngotItem,9), new  ItemStack(bloodStoneBlockItem));
 		
 		//Smelting Recipes
 		
