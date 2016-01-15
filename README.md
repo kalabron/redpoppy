@@ -2,7 +2,7 @@
 Order of the Red Poppy
 ======================
 
-for Minecraft 1.8 (website coming soon)
+for Minecraft 1.8.9 (website coming soon)
 
 About
 
