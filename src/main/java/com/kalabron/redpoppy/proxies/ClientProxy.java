@@ -1,7 +1,5 @@
 package com.kalabron.redpoppy.proxies;
 
-import com.kalabron.redpoppy.items.ModItems;
-
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -82,19 +80,7 @@ public class ClientProxy extends CommonProxy
 				new ModelResourceLocation("redpoppy:ruggedLeather", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
 			.register(ruggedLeatherItem,  0, ruggedLeatherModel);			
-		
-		Item bloodBerryItem = GameRegistry.findItem("redPoppy",  "bloodBerry");
-		ModelResourceLocation bloodBerryModel = 
-				new ModelResourceLocation("redpoppy:bloodBerry", "inventory");
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodBerryItem,  0, bloodBerryModel);		
-		
-		Item bloodBerryBushItem = GameRegistry.findItem("redPoppy",  "bloodBerryBush");
-		ModelResourceLocation bloodBerryBushModel = 
-				new ModelResourceLocation("redpoppy:bloodBerryBush", "inventory");
-		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(bloodBerryBushItem,  0, bloodBerryBushModel);		
-		
+				
 		Item bloodStonePickAxeItem = GameRegistry.findItem("redPoppy",  "bloodStonePickAxe");
 		ModelResourceLocation bloodStonePickAxeModel = 
 				new ModelResourceLocation("redpoppy:bloodStonePickAxe", "inventory");

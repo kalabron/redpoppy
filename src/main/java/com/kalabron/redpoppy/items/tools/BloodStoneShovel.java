@@ -3,7 +3,6 @@ package com.kalabron.redpoppy.items.tools;
 import com.kalabron.redpoppy.Reference;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemSpade;
 
 public class BloodStoneShovel extends ItemSpade

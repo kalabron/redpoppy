@@ -9,7 +9,6 @@ import net.minecraftforge.oredict.OreDictionary;
 public class ModBlocks 
 {
 		public static Block bloodStoneOre;
-		public static Block bloodBerryBush;
 		public static Block bloodStoneBlock;
 			
 		public static void loadBlocks()
@@ -17,9 +16,6 @@ public class ModBlocks
 			bloodStoneOre = new BloodStoneOre();
 			GameRegistry.registerBlock(bloodStoneOre, "bloodStoneOre");
 			OreDictionary.registerOre("oreBloodstone", new ItemStack(bloodStoneOre));	
-			
-			bloodBerryBush = new BloodBerryBush();
-			GameRegistry.registerBlock(bloodBerryBush, "bloodBerryBush");
 			
 			bloodStoneBlock = new BloodStoneBlock();
 			GameRegistry.registerBlock(bloodStoneBlock,  "bloodStoneBlock");

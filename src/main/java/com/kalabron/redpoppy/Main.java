@@ -2,17 +2,9 @@ package com.kalabron.redpoppy;
 
 import com.kalabron.redpoppy.handlers.RecipeHandler;
 import com.kalabron.redpoppy.handlers.RedpoppyEventHandler;
-import com.kalabron.redpoppy.items.BloodStoneIngot;
 import com.kalabron.redpoppy.items.ModItems;
 import com.kalabron.redpoppy.proxies.CommonProxy;
 
-import net.minecraft.enchantment.Enchantment;
-import net.minecraft.init.Blocks;
-import net.minecraft.init.Items;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.WeightedRandomChestContent;
-import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.Mod.Instance;
@@ -21,8 +13,6 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
-import net.minecraftforge.oredict.OreDictionary;
-import net.minecraftforge.oredict.ShapedOreRecipe;
 
 
 

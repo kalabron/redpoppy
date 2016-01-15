@@ -1,18 +1,14 @@
 package com.kalabron.redpoppy.items;
 
-import com.kalabron.redpoppy.Reference;
+import com.kalabron.redpoppy.items.armor.BloodStoneArmor;
+import com.kalabron.redpoppy.items.armor.RuggedLeatherArmor;
 import com.kalabron.redpoppy.items.tools.BloodStoneAxe;
 import com.kalabron.redpoppy.items.tools.BloodStoneHoe;
 import com.kalabron.redpoppy.items.tools.BloodStonePickAxe;
 import com.kalabron.redpoppy.items.tools.BloodStoneShear;
 import com.kalabron.redpoppy.items.tools.BloodStoneShovel;
 import com.kalabron.redpoppy.items.tools.BloodStoneSword;
-import com.kalabron.redpoppy.items.armor.BloodStoneArmor;
-import com.kalabron.redpoppy.items.armor.RuggedLeatherArmor;
 
-import net.minecraft.client.Minecraft;
-import net.minecraft.client.resources.model.ModelResourceLocation;
-import net.minecraft.entity.Entity;
 import net.minecraft.item.Item;
 import net.minecraft.item.Item.ToolMaterial;
 import net.minecraft.item.ItemArmor.ArmorMaterial;
@@ -44,7 +40,6 @@ public class ModItems
 	public static Item redPoppyBook;
 	public static Item blackBloodKey;
 	public static Item greenBloodKey;
-	public static Item bloodBerry;
 	public static Item bloodyScrap;
 	public static Item leatherScrap;
 	public static Item ruggedLeather;
@@ -102,9 +97,6 @@ public class ModItems
 		
 		greenBloodKey = new GreenBloodKey();
 		GameRegistry.registerItem(greenBloodKey, "greenBloodKey");
-		
-		bloodBerry = new BloodBerry(3,0.3F, true);
-		GameRegistry.registerItem(bloodBerry, "bloodBerry");
 		
 		
 		// tools
