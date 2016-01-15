@@ -2,9 +2,7 @@ package com.kalabron.redpoppy.worldgen;
 
 import java.util.Random;
 
-import com.kalabron.redpoppy.blocks.BloodBerryBush;
 import com.kalabron.redpoppy.blocks.ModBlocks;
-import com.kalabron.redpoppy.items.ModItems;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.util.BlockPos;
