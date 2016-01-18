@@ -43,6 +43,9 @@ public class ModItems
 	public static Item bloodyScrap;
 	public static Item leatherScrap;
 	public static Item ruggedLeather;
+	public static Item ruggedLeatherRepairKit;
+	public static Item ruggedLeatherUpgradeKit;
+	public static Item leatherRepairKit;
 	
 	// armor
 	public static Item ruggedLeatherHelmet;
@@ -95,9 +98,17 @@ public class ModItems
 		blackBloodKey = new BlackBloodKey();
 		GameRegistry.registerItem(blackBloodKey, "blackBloodKey");
 		
-		greenBloodKey = new GreenBloodKey();
-		GameRegistry.registerItem(greenBloodKey, "greenBloodKey");
+		ruggedLeatherRepairKit = new RuggedLeatherRepairKit();
+		GameRegistry.registerItem(ruggedLeatherRepairKit, "ruggedLeatherRepairKit");
 		
+		leatherRepairKit = new LeatherRepairKit();
+		GameRegistry.registerItem(leatherRepairKit, "leatherRepairKit");	
+		
+		ruggedLeatherUpgradeKit = new RuggedLeatherUpgradeKit();
+		GameRegistry.registerItem(ruggedLeatherUpgradeKit, "ruggedLeatherUpgradeKit");	
+		
+		greenBloodKey = new GreenBloodKey();
+		GameRegistry.registerItem(greenBloodKey, "greenBloodKey");		
 		
 		// tools
 		bloodStonePickAxe = new BloodStonePickAxe(poppium, "bloodStonePickAxe");

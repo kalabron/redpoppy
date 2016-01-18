@@ -79,7 +79,25 @@ public class ClientProxy extends CommonProxy
 		ModelResourceLocation ruggedLeatherModel = 
 				new ModelResourceLocation("redpoppy:ruggedLeather", "inventory");
 		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
-			.register(ruggedLeatherItem,  0, ruggedLeatherModel);			
+			.register(ruggedLeatherItem,  0, ruggedLeatherModel);				
+		
+		Item ruggedLeatherRepairKitItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherRepairKit");
+		ModelResourceLocation ruggedLeatherRepairKitModel = 
+				new ModelResourceLocation("redpoppy:ruggedLeatherRepairKit", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(ruggedLeatherRepairKitItem,  0, ruggedLeatherRepairKitModel);	
+		
+		Item ruggedLeatherUpgradeKitItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherUpgradeKit");
+		ModelResourceLocation ruggedLeatherUpgradeKitModel = 
+				new ModelResourceLocation("redpoppy:ruggedLeatherUpgradeKit", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(ruggedLeatherUpgradeKitItem,  0, ruggedLeatherUpgradeKitModel);	
+		
+		Item leatherRepairKitItem = GameRegistry.findItem("redpoppy",  "leatherRepairKit");
+		ModelResourceLocation leatherRepairKitModel = 
+				new ModelResourceLocation("redpoppy:leatherRepairKit", "inventory");
+		Minecraft.getMinecraft().getRenderItem().getItemModelMesher()
+			.register(leatherRepairKitItem,  0, leatherRepairKitModel);					
 				
 		Item bloodStonePickAxeItem = GameRegistry.findItem("redPoppy",  "bloodStonePickAxe");
 		ModelResourceLocation bloodStonePickAxeModel = 

@@ -10,6 +10,7 @@ import net.minecraft.util.WeightedRandomChestContent;
 import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.registry.GameRegistry;
+import net.minecraftforge.oredict.OreDictionary;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
 
@@ -43,6 +44,9 @@ public class RecipeHandler
 		Item ruggedLeatherChestplateItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherChestplate");
 		Item ruggedLeatherLeggingsItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherLeggings");
 		Item ruggedLeatherBootsItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherBoots");
+		Item ruggedLeatherUpgradeKitItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherUpgradeKit");
+		Item ruggedLeatherRepairKitItem = GameRegistry.findItem("redpoppy",  "ruggedLeatherRepairKit");
+		Item leatherRepairKitItem = GameRegistry.findItem("redpoppy",  "leatherRepairKit");
 		
 		// Drops on death - Calls Handlers
 		MinecraftForge.EVENT_BUS.register(new PigDropsBloodyScraps());
@@ -51,7 +55,7 @@ public class RecipeHandler
 		MinecraftForge.EVENT_BUS.register(new ChickenDropsBloodyScraps());
 		MinecraftForge.EVENT_BUS.register(new PigZombieDropsRuggedLeather());
 		
-		// Enchantment recipes
+		// Enchantment recipes for Tools & Weapons
 		// 		coal = unbreaking (all tools and swords)
 		// 		gunpowder = knockback (sword only)
 		//		feather = respiration (head only), featherFalling (boots only)
@@ -131,7 +135,12 @@ public class RecipeHandler
 		
 		
 		
-		// Bloodstone Armor Enchanting Recipes
+		// Armor Enchanting Recipes -- Used in Bloodstone, Leather, and Rugged Leather Armor 
+		// use red poppy in each recipe
+		// feather - Respiration for helmet
+		// feather - feather falling for books
+		
+		// Bloodstone Enchanting Recipes
 		ItemStack respirationBloodStoneHelmetItemStack = new ItemStack(bloodStoneHelmetItem);
 		respirationBloodStoneHelmetItemStack.addEnchantment(Enchantment.respiration, 1);
 		
@@ -170,10 +179,7 @@ public class RecipeHandler
 		GameRegistry.addShapelessRecipe(featherFallingLeatherBootsItemStack,
 				Items.feather, Items.leather_boots, Blocks.red_flower);	
 		
-		
-		
 		// Shaped Crafting Recipes
-		
 		GameRegistry.addRecipe(
 				new ItemStack(redPoppyBookItem),
 				"e  ",
@@ -181,6 +187,59 @@ public class RecipeHandler
 				"   ",
 				'd', Items.book,
 				'e', Blocks.red_flower);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(leatherRepairKitItem),
+				"e  ",
+				" e ",
+				"   ",
+				'e', Items.leather);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(ruggedLeatherRepairKitItem),
+				"e  ",
+				" e ",
+				"   ",
+				'e', ruggedLeatherItem);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(ruggedLeatherUpgradeKitItem),
+				"e  ",
+				" e ",
+				"  e",
+				'e', ruggedLeatherItem);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(ruggedLeatherHelmetItem),
+				"   ",
+				"d  ",
+				"e  ",
+				'd', ruggedLeatherUpgradeKitItem,
+				'e', Items.leather_helmet);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(ruggedLeatherChestplateItem),
+				"   ",
+				"d  ",
+				"e  ",
+				'd', ruggedLeatherUpgradeKitItem,
+				'e', Items.leather_chestplate);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(ruggedLeatherLeggingsItem),
+				"   ",
+				"d  ",
+				"e  ",
+				'd', ruggedLeatherUpgradeKitItem,
+				'e', Items.leather_leggings);
+		
+		GameRegistry.addRecipe(
+				new ItemStack(ruggedLeatherBootsItem),
+				"   ",
+				"d  ",
+				"e  ",
+				'd', ruggedLeatherUpgradeKitItem,
+				'e', Items.leather_boots);
 		
 		GameRegistry.addRecipe(
 				new ShapedOreRecipe(bloodStonePickAxeItem,
@@ -314,6 +373,71 @@ public class RecipeHandler
 				"d d",
 				'd', "materialRuggedLeather"));
 		
+	    GameRegistry.addRecipe(new ItemStack(Items.leather_helmet), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(Items.leather_helmet, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', leatherRepairKitItem
+	    });
+		
+	    GameRegistry.addRecipe(new ItemStack(Items.leather_chestplate), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(Items.leather_chestplate, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', leatherRepairKitItem
+	    });
+	    
+	    GameRegistry.addRecipe(new ItemStack(Items.leather_leggings), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(Items.leather_leggings, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', leatherRepairKitItem
+	    });	    
+		
+	    GameRegistry.addRecipe(new ItemStack(Items.leather_boots), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(Items.leather_boots, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', leatherRepairKitItem
+	    });	  		
+
+	    GameRegistry.addRecipe(new ItemStack(ruggedLeatherHelmetItem), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(ruggedLeatherHelmetItem, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', ruggedLeatherRepairKitItem
+	    });
+		
+	    GameRegistry.addRecipe(new ItemStack(ruggedLeatherChestplateItem), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(ruggedLeatherChestplateItem, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', ruggedLeatherRepairKitItem
+	    });
+	    
+	    GameRegistry.addRecipe(new ItemStack(ruggedLeatherLeggingsItem), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(ruggedLeatherLeggingsItem, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', ruggedLeatherRepairKitItem
+	    });
+	    
+	    GameRegistry.addRecipe(new ItemStack(ruggedLeatherBootsItem), new Object[]{
+	            "   ",
+	            "I  ",
+	            "W  ",
+	                  'W', new ItemStack(ruggedLeatherBootsItem, 1, OreDictionary.WILDCARD_VALUE),
+	                  'I', ruggedLeatherRepairKitItem
+	    });
+	    
+	    
 		//shapeless recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(bloodStoneIngotItem,9), new  ItemStack(bloodStoneBlockItem));
 		
@@ -329,7 +453,6 @@ public class RecipeHandler
 				new ItemStack(leatherScrapItem, 1),
 				1.0F);
 		
-		
 		//Dungeon changes - adds Bloodstone Ingots, Green Bloodkey & Black Bloodkey to chests
 		ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new
 				WeightedRandomChestContent(new ItemStack(bloodStoneIngotItem), 1,5,7));
@@ -339,7 +462,6 @@ public class RecipeHandler
 		
 		ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST, new
 				WeightedRandomChestContent(new ItemStack(greenBloodKeyItem), 1,5,7));
-		
 		
 	}
 
